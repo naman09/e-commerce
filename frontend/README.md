@@ -1,6 +1,6 @@
 # Frontend
 
-https://www.figma.com/design/ODO9sFeZIaXdVBtPyuJpBF/Untitled?node-id=1-1413&t=f75mlClHkA0kdD16-0
+https://www.figma.com/design/ODO9sFeZIaXdVBtPyuJpBF/Blue-Whale-Corp?node-id=0-1&t=wBmMCq9xmwP7Qdvo-1
 
 ### Development
 
