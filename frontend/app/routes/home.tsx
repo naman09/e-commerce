@@ -15,7 +15,7 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold">
+    <div className="">
       <TopNavBar />
       <hr/>
       <Banner />
@@ -27,6 +27,6 @@ export default function Home() {
       <CustomerTestimonies />
       <hr/>
       <Footer />
-    </h1>
+    </div>
   );
 }
