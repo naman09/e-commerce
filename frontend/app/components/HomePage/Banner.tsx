@@ -1,7 +1,7 @@
 export const Banner = () => {
-    return <>
-        <h1 className="text-2xl font-bold text-blue-600">Blue Whale Corp</h1>
+    return <div className="my-12 space-y-5">
+        <h1 className="text-4xl font-bold text-black-600">Blue Whale Corp</h1>
         <p>Subheading that sets up context, shares more info about the website, or generally gets people psyched to keep scrolling. </p>
-        <button>Get Started</button>
-    </>
+        <button className="bg-black text-white px-5 py-3 rounded-md">Get Started</button>
+    </div>
 }

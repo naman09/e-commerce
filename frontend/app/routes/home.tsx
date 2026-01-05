@@ -15,7 +15,7 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="m-8">
       <TopNavBar />
       <hr/>
       <Banner />
