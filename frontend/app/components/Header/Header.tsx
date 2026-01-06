@@ -1,7 +1,7 @@
 import { TopNavBar } from "../TopNavBar"
 
 export const Header = () => {
-    return <>
+    return <div className="mx-0">
         <TopNavBar/>
-    </>
+    </div>
 }
