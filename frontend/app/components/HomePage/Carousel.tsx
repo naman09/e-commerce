@@ -1,9 +1,19 @@
 import { useState } from "react";
 
 const images = [
-  "https://picsum.photos/800/400?1",
-  "https://picsum.photos/800/400?2",
-  "https://picsum.photos/800/400?3",
+  "app/assets/images/alaa-turkman-mfO0SRKNzME-unsplash.jpg",
+  "app/assets/images/damir-samatkulov-Z3jVGKVpuxI-unsplash.jpg",
+  "app/assets/images/dan-smedley-2wVRh5MpQ0Y-unsplash.jpg",
+  "app/assets/images/danilo-alvesd-YPuCba3I9GQ-unsplash.jpg",
+  "app/assets/images/erik-mclean-IxfhMTROke8-unsplash.jpg",
+  "app/assets/images/jacek-dylag-Vve7XkiUq_Y-unsplash.jpg",
+  "app/assets/images/murat-ts-pNs4T0QV1pY-unsplash.jpg",
+  "app/assets/images/pan-xiaozhen-IYE0ImQlY90-unsplash.jpg",
+  "app/assets/images/ryk-porras-sg7y0ux4fdU-unsplash.jpg",
+  "app/assets/images/samuel-sianipar-scUBcasSvbE-unsplash.jpg",
+  "app/assets/images/sebastian-morelli-peyton-DVqdk8MTp2I-unsplash.jpg",
+  "app/assets/images/timur-shakerzianov-c314Gh8dXAo-unsplash.jpg",
+  "app/assets/images/wesley-caribe-TtN_obfWlGw-unsplash.jpg",
 ];
 
 export const Carousel = () => {

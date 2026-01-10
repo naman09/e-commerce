@@ -19,3 +19,8 @@ Create a production build:
 ```bash
 npm run build
 ```
+
+### For free images 
+  "https://picsum.photos/800/400?1",
+  "https://picsum.photos/800/400?2",
+  "https://picsum.photos/800/400?3",
