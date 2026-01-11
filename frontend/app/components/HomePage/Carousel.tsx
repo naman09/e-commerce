@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const images = [
-  "app/assets/images/alaa-turkman-mfO0SRKNzME-unsplash.jpg",
-  "app/assets/images/damir-samatkulov-Z3jVGKVpuxI-unsplash.jpg",
+  // "app/assets/images/alaa-turkman-mfO0SRKNzME-unsplash.jpg",
+  // "app/assets/images/damir-samatkulov-Z3jVGKVpuxI-unsplash.jpg",
   "app/assets/images/dan-smedley-2wVRh5MpQ0Y-unsplash.jpg",
   "app/assets/images/danilo-alvesd-YPuCba3I9GQ-unsplash.jpg",
   "app/assets/images/erik-mclean-IxfhMTROke8-unsplash.jpg",
-  "app/assets/images/jacek-dylag-Vve7XkiUq_Y-unsplash.jpg",
+  // "app/assets/images/jacek-dylag-Vve7XkiUq_Y-unsplash.jpg",
   "app/assets/images/murat-ts-pNs4T0QV1pY-unsplash.jpg",
   "app/assets/images/pan-xiaozhen-IYE0ImQlY90-unsplash.jpg",
   "app/assets/images/ryk-porras-sg7y0ux4fdU-unsplash.jpg",
@@ -20,13 +20,13 @@ export const Carousel = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="relative w-full max-w-4xl overflow-hidden rounded-2xl my-2">
+    <div className="relative mx-80 overflow-hidden rounded-2xl my-2">
       <div
-        className="flex transition-transform duration-500"
+        className="flex transition-transform duration-700"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((src, i) => (
-          <img key={i} src={src} className="w-full flex-shrink-0" />
+          <img key={i} src={src} className="w-full h-100 flex-shrink-0 object-contain" />
         ))}
       </div>
 
