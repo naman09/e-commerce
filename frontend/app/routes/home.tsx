@@ -2,7 +2,7 @@ import type { Route } from "./+types/home";
 import { TopNavBar } from "~/components/TopNavBar";
 import { Banner } from "~/components/HomePage/Banner";
 import { Carousel } from "~/components/HomePage/Carousel";
-import { Offerings } from "~/components/HomePage/Offerings";
+import { Offerings } from "~/components/HomePage/Offerings/Offerings";
 import { CustomerTestimonies } from "~/components/HomePage/CustomerTestimonies";
 import { Footer } from "~/components/Footer";
 
