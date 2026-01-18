@@ -13,7 +13,7 @@ const offeringMetadata = [
         title: "Services",
         description: "pqrs",
         image: {
-            imageUrl: "app/assets/images/damir-samatkulov-Z3jVGKVpuxI-unsplash.jpg",
+            imageUrl: "app/assets/images/alaa-turkman-mfO0SRKNzME-unsplash.jpg",
             imageAlt: "Services image"
         }
     },
@@ -21,16 +21,16 @@ const offeringMetadata = [
         title: "Customer Care",
         description: "abcd",
         image: {
-            imageUrl: "app/assets/images/jacek-dylag-Vve7XkiUq_Y-unsplash.jpg",
+            imageUrl: "app/assets/images/alaa-turkman-mfO0SRKNzME-unsplash.jpg",
             imageAlt: "Customer Care image"
         }
     },
 ]
 
 export const Offerings = () => {
-    return <>
+    return <div className="space-y-5">
         <h1 className="text-3xl font-semibold">Offerings</h1>
-        <div>
+        <div className="flex justify-around">
             {offeringMetadata.map((offering, idx) =>
                 <OfferingCard 
                     key={idx} 
@@ -41,5 +41,5 @@ export const Offerings = () => {
                 />
             )}
         </div>
-    </>
+    </div>
 }
