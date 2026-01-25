@@ -5,7 +5,7 @@ const offeringMetadata = [
         title: "Marketplace",
         description: "abcd",
         image: {
-            imageUrl: "app/assets/images/alaa-turkman-mfO0SRKNzME-unsplash.jpg",
+            imageUrl: "app/assets/images/public-domain-vectors-IljwEKorx_0-unsplash.jpg",
             imageAlt: "marketplace image"
         }
     },
@@ -13,7 +13,7 @@ const offeringMetadata = [
         title: "Services",
         description: "pqrs",
         image: {
-            imageUrl: "app/assets/images/alaa-turkman-mfO0SRKNzME-unsplash.jpg",
+            imageUrl: "app/assets/images/public-domain-vectors-XRF5dt9ow9Y-unsplash.jpg",
             imageAlt: "Services image"
         }
     },
@@ -21,7 +21,7 @@ const offeringMetadata = [
         title: "Customer Care",
         description: "abcd",
         image: {
-            imageUrl: "app/assets/images/alaa-turkman-mfO0SRKNzME-unsplash.jpg",
+            imageUrl: "app/assets/images/public-domain-vectors-myYTi-lKv2Y-unsplash.jpg",
             imageAlt: "Customer Care image"
         }
     },
