@@ -21,8 +21,8 @@ const testimonies: Testimony[] = [
 ]
 
 export const CustomerTestimonies = () => {
-    return <div className="space-y-5">
-        <h1 className="text-3xl font-semibold">Customer Testimonies</h1>
+    return <div className="space-y-10 flex flex-col items-center">
+        <h1 className="text-3xl font-bold">What our customers says</h1>
         <div className="flex justify-center space-x-8">
             {testimonies.map((testimony) =>
                 <TestimonyCard

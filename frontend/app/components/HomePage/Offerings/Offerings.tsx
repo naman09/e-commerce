@@ -28,8 +28,8 @@ const offeringMetadata = [
 ]
 
 export const Offerings = () => {
-    return <div className="space-y-5">
-        <h1 className="text-3xl font-semibold">Offerings</h1>
+    return <div className="space-y-10">
+        <h1 className="text-3xl font-bold">Offerings</h1>
         <div className="flex justify-around">
             {offeringMetadata.map((offering, idx) =>
                 <OfferingCard 
