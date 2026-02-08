@@ -6,9 +6,8 @@ export interface TestimonyCard {
 }
 
 export const TestimonyCard = (props: TestimonyCard) => {
-    return <div className="border border-gray-100 shadow-md rounded-lg h-full p-8">
-        <p>{props.testimony.text}</p>
-        <p>{props.testimony.userId}</p>
+    return <div className="border border-gray-100 shadow-md rounded-lg h-80 py-16 px-10 w-1/4 space-y-16">
+        <p className="line-clamp-4">{props.testimony.text}</p>
         <Avatar userId={props.testimony.userId}/>
     </div>
 }

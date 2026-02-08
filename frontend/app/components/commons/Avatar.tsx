@@ -38,7 +38,7 @@ export const Avatar = (props: AvatarProps) => {
 
     
     // TODO: add default image if imageUrl is undefined
-    return <div>
+    return <div className="space-y-2">
         <img src={user.imageUrl} alt={altText} className="rounded-full w-10"/> 
         <p>{user.name}</p>
     </div>
