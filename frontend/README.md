@@ -24,3 +24,13 @@ npm run build
   "https://picsum.photos/800/400?1",
   "https://picsum.photos/800/400?2",
   "https://picsum.photos/800/400?3",
+
+
+
+## Next steps
+* Add content on Home page
+
+## Ideas
+* Adding a advertisement banner in the middle of marketplace 
+* what goes in the description of meta tags - SEO related stuff ??
+* Correct alt texts of image

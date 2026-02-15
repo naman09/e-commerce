@@ -33,13 +33,12 @@ export const Avatar = (props: AvatarProps) => {
     if (!user) {
         return <></>
     }
-
-    const altText = `Avatar image of user ${user.name}`; 
-
     
     // TODO: add default image if imageUrl is undefined
     return <div className="space-y-2 flex flex-col items-center">
-        <img src={user.imageUrl} alt={altText} className="rounded-full w-10"/> 
+
+        {/* Adding alt text is redundant as name already exists */}
+        <img src={user.imageUrl} alt="" className="rounded-full w-10"/> 
         <p>{user.name}</p>
     </div>
 }
