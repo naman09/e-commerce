@@ -28,7 +28,7 @@ npm run build
 
 
 ## Next steps
-* Add content on Home page
+* Fix Carousel (Make it full lenght or else replace it with some big photo & content on side)
 
 ## Ideas
 * Adding a advertisement banner in the middle of marketplace 
