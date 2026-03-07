@@ -18,12 +18,9 @@ export default function Home() {
     <div className="m-10">
       <TopNavBar />
       <Banner />
-      <Carousel />
-      <hr/>
-      <Offerings />
-      <hr/>
-      <CustomerTestimonies />
-      <hr/>
+      {/* <Carousel /> */}     
+      <Offerings />     
+      <CustomerTestimonies />     
       <Footer />
     </div>
   );

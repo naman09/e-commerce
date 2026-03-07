@@ -6,11 +6,11 @@ export interface OfferingCardProps {
 }
 
 export const OfferingCard = (props: OfferingCardProps) => {
-    return <div>
-        <img src={props.imageUrl} alt={props.imageAlt} className="border border-gray-100 shadow-md rounded-lg w-full h-100 object-contain"/>
+    return <div className="w-100">
+        <img src={props.imageUrl} alt={props.imageAlt} className="border border-gray-100 shadow-md rounded-lg h-100 object-contain"/>
         <div className="mt-4">
-            <p className="font-medium">{props.title}</p>
-            <p className="text-gray-400">{props.description}</p>
+            <p className="font-medium text-center">{props.title}</p>
+            <p className="text-gray-500 text-center">{props.description}</p>
         </div>
     </div>
 }
