@@ -15,13 +15,15 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Home() {
   return (
+    <>
+    <TopNavBar />
     <div className="m-10">
-      <TopNavBar />
       <Banner />
       {/* <Carousel /> */}     
       <Offerings />     
       <CustomerTestimonies />     
       <Footer />
     </div>
+    </>
   );
 }

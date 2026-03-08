@@ -5,7 +5,7 @@ const offeringMetadata = [
         title: "Marketplace",
         description: "Quality plumbing parts to keep your systems running smoothly.",
         image: {
-            imageUrl: "app/assets/images/public-domain-vectors-IljwEKorx_0-unsplash.jpg",
+            imageUrl: "app/assets/images/he-shiyuan-8sXS9dtSHy8-unsplash.jpg",
             imageAlt: "marketplace image"
         }
     },
@@ -13,7 +13,7 @@ const offeringMetadata = [
         title: "Services",
         description: "Professional plumbing services for installation, maintenance, and repair",
         image: {
-            imageUrl: "app/assets/images/public-domain-vectors-XRF5dt9ow9Y-unsplash.jpg",
+            imageUrl: "app/assets/images/cannabox-EcCUsk8iSSo-unsplash.jpg",
             imageAlt: "Services image"
         }
     },
@@ -21,7 +21,7 @@ const offeringMetadata = [
         title: "Customer Care",
         description: "24/7 Dedicated customer care whenever you need assistance.",
         image: {
-            imageUrl: "app/assets/images/public-domain-vectors-myYTi-lKv2Y-unsplash.jpg",
+            imageUrl: "app/assets/images/mike-meyers--haAxbjiHds-unsplash.jpg",
             imageAlt: "Customer Care image"
         }
     },

@@ -28,7 +28,8 @@ npm run build
 
 
 ## Next steps
-* Fix Carousel (Make it full lenght or else replace it with some big photo & content on side)
+* Marketplace
+* admin portal to enter data
 
 ## Ideas
 * Adding a advertisement banner in the middle of marketplace 
