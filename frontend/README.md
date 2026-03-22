@@ -30,6 +30,7 @@ npm run build
 ## Next steps
 * Marketplace
 * admin portal to enter data
+* run lint, prettier check on my code
 
 ## Ideas
 * Adding a advertisement banner in the middle of marketplace 
