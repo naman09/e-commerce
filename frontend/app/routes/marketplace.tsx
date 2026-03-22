@@ -1,6 +1,7 @@
 import type { LoaderFunctionArgs } from "react-router";
 import { ProductListingGrid } from "~/components/HomePage/Marketplace/ProductListingGrid";
 import type { Route } from "../+types/root";
+import { TopNavBar } from "~/components/TopNavBar";
 
 export async function loader({ request }: LoaderFunctionArgs) {
     // you can fetch data here later
@@ -17,9 +18,12 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Marketplace() {
     return (
-        <div className="m-10">
-            <h1>Marketplace</h1>
-            <ProductListingGrid />
-        </div>
+        <>
+            <TopNavBar/>
+            <div className="m-10">
+                <h1>Marketplace</h1>
+                <ProductListingGrid />
+            </div>
+        </>
     );
 }
