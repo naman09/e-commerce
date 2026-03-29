@@ -1,11 +1,10 @@
-import type { Route } from "./+types/home";
 import { TopNavBar } from "~/components/TopNavBar";
 import { Banner } from "~/components/HomePage/Banner";
 import { Offerings } from "~/components/HomePage/Offerings/Offerings";
 import { Footer } from "~/components/Footer";
 import { CustomerTestimonies } from "~/components/HomePage/CustomerTestimonies/CustomerTestimonies";
 
-export function meta({ }: Route.MetaArgs) {
+export function meta() {
   return [
     { title: "Blue Whale Corp" },
     { name: "description", content: "Welcome to React Router!" },

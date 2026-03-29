@@ -32,6 +32,11 @@ npm run build
 * admin portal to enter data
 * run lint, prettier check on my code
 
+# Learning goals
+* tailwind usefulness in stateful react app
+* A11Ly
+* Security
+
 ## Ideas
 * Adding a advertisement banner in the middle of marketplace 
 * what goes in the description of meta tags - SEO related stuff ??
