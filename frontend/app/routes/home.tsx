@@ -14,13 +14,13 @@ export function meta() {
 export default function Home() {
   return (
     <>
-    <TopNavBar />
-    <div className="m-10">
-      <Banner />     
-      <Offerings />     
-      <CustomerTestimonies />     
-      <Footer />
-    </div>
+      <TopNavBar />
+      <div className="m-10">
+        <Banner />
+        <Offerings />
+        <CustomerTestimonies />
+        <Footer />
+      </div>
     </>
   );
 }

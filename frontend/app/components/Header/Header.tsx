@@ -1,7 +1,9 @@
-import { TopNavBar } from "../TopNavBar"
+import { TopNavBar } from "../TopNavBar";
 
 export const Header = () => {
-    return <div className="mx-0">
-        <TopNavBar/>
+  return (
+    <div className="mx-0">
+      <TopNavBar />
     </div>
-}
+  );
+};

@@ -20,24 +20,26 @@ Create a production build:
 npm run build
 ```
 
-### For free images 
-  "https://picsum.photos/800/400?1",
-  "https://picsum.photos/800/400?2",
-  "https://picsum.photos/800/400?3",
+### For free images
 
-
+"https://picsum.photos/800/400?1",
+"https://picsum.photos/800/400?2",
+"https://picsum.photos/800/400?3",
 
 ## Next steps
-* Marketplace
-* admin portal to enter data
-* run lint, prettier check on my code
+
+- Marketplace
+- admin portal to enter data
+- run lint, prettier check on my code
 
 # Learning goals
-* tailwind usefulness in stateful react app
-* A11Ly
-* Security
+
+- tailwind usefulness in stateful react app
+- A11Ly
+- Security
 
 ## Ideas
-* Adding a advertisement banner in the middle of marketplace 
-* what goes in the description of meta tags - SEO related stuff ??
-* Correct alt texts of image
+
+- Adding a advertisement banner in the middle of marketplace
+- what goes in the description of meta tags - SEO related stuff ??
+- Correct alt texts of image

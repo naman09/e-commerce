@@ -26,7 +26,11 @@ export const Carousel = () => {
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((src, i) => (
-          <img key={i} src={src} className="w-full h-150 flex-shrink-0 object-contain" />
+          <img
+            key={i}
+            src={src}
+            className="w-full h-150 flex-shrink-0 object-contain"
+          />
         ))}
       </div>
 
@@ -45,4 +49,4 @@ export const Carousel = () => {
       </button>
     </div>
   );
-}
+};

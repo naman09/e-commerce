@@ -2,8 +2,8 @@ import { ProductListingGrid } from "~/components/HomePage/Marketplace/ProductLis
 import { TopNavBar } from "~/components/TopNavBar";
 
 export async function loader() {
-    // you can fetch data here later
-    return null;
+  // you can fetch data here later
+  return null;
 }
 
 export function meta() {
@@ -13,15 +13,14 @@ export function meta() {
   ];
 }
 
-
 export default function Marketplace() {
-    return (
-        <>
-            <TopNavBar/>
-            <div className="m-10">
-                <h1>Marketplace</h1>
-                <ProductListingGrid />
-            </div>
-        </>
-    );
+  return (
+    <>
+      <TopNavBar />
+      <div className="m-10">
+        <h1>Marketplace</h1>
+        <ProductListingGrid />
+      </div>
+    </>
+  );
 }
