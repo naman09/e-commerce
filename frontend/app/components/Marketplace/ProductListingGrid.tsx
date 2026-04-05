@@ -73,7 +73,6 @@ const products: Product[] = [
 export const ProductListingGrid = () => {
   return (
     <>
-      <h1>Product Listing Grid</h1>
       <div className="grid grid-cols-4 gap-4">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />

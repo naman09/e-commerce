@@ -28,9 +28,9 @@ npm run build
 
 ## Next steps
 
-- Marketplace
-- admin portal to enter data
-- run lint, prettier check on my code
+- [ ] Marketplace
+- [ ] admin portal to enter data
+- [ x ] run lint, prettier check on my code
 
 # Learning goals
 

@@ -1,5 +1,5 @@
-import { ProductListingGrid } from "~/components/HomePage/Marketplace/ProductListingGrid";
-import { TopNavBar } from "~/components/TopNavBar";
+import { ProductListingGrid } from "~/components/Marketplace/ProductListingGrid";
+import { TopNavBar } from "~/components/Marketplace/SearchBar/TopNavBar";
 
 export async function loader() {
   // you can fetch data here later
@@ -18,7 +18,7 @@ export default function Marketplace() {
     <>
       <TopNavBar />
       <div className="m-10">
-        <h1>Marketplace</h1>
+        <h1 className="text-3xl font-bold my-10">Marketplace</h1>
         <ProductListingGrid />
       </div>
     </>
