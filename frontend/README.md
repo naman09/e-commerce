@@ -27,10 +27,11 @@ npm run build
 "https://picsum.photos/800/400?3",
 
 ## Next steps
-
+- [ ] All pages wireframe - product details, user details, checkout cart, order history, order details, payment success/failure, user details
 - [ ] Marketplace
 - [ ] admin portal to enter data
 - [ x ] run lint, prettier check on my code
+
 
 # Learning goals
 
