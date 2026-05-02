@@ -31,6 +31,7 @@ npm run build
 - [ ] Marketplace
 - [ ] admin portal to enter data
 - [ x ] run lint, prettier check on my code
+= [ ] Search nav bar - fix it at top like current navbar
 
 
 # Learning goals
