@@ -7,7 +7,7 @@ export const TopNavBar = () => {
     <div className="flex justify-between sticky top-0 z-10 px-10 py-2">
       <div className="flex">
         <img
-          src="app/assets/images/blue-whale-icon.png"
+          src="/app/assets/images/blue-whale-icon.png"
           alt="blue whale corp navbar logo"
           className="h-15"
         />

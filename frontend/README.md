@@ -27,11 +27,12 @@ npm run build
 "https://picsum.photos/800/400?3",
 
 ## Next steps
-- [ ] All pages wireframe - product details, user details, checkout cart, order history, order details, payment success/failure, user details
+- [ x ] All pages wireframe - product details, user details, checkout cart, order history, order details, payment success/failure
+- [ ] Product Details Page
 - [ ] Marketplace
 - [ ] admin portal to enter data
 - [ x ] run lint, prettier check on my code
-= [ ] Search nav bar - fix it at top like current navbar
+- [ ] Search nav bar - fix it at top like current navbar
 
 
 # Learning goals
@@ -45,3 +46,7 @@ npm run build
 - Adding a advertisement banner in the middle of marketplace
 - what goes in the description of meta tags - SEO related stuff ??
 - Correct alt texts of image
+
+
+## What is BlueWhale
+Website for small e-commerce vendors usable in real world
