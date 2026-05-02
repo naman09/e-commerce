@@ -1,4 +1,4 @@
-import { Avatar } from "~/components/commons/Avatar";
+import { Avatar } from "~/components/Commons/Avatar";
 import type { Testimony } from "./CustomerTestimonies";
 
 export interface TestimonyCard {

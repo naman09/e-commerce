@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <TopNavBar />
-      <div className="m-10">
+      <div className="m-10 pt-6">
         <Banner />
         <Offerings />
         <CustomerTestimonies />
