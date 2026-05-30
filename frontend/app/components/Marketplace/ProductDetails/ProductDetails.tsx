@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import { TopNavBar } from "../SearchBar/TopNavBar";
+import { ImageCard } from "./ImageCard";
 
 export const ProductDetails = () => {
     const { id } = useParams();
@@ -8,15 +9,12 @@ export const ProductDetails = () => {
         <>    
         <TopNavBar />
         <h1>Product details with id: {id}</h1>
-        <div>
-            <img
-                src="/app/assets/images/blue-whale-icon.png"
-                alt="product image"
-                className="h-15"
-            />
+        <div className="ml-10">
+        <div className="flex flex-wrap gap-5">
+            <ImageCard />
             <div>
-                <h2>Company name</h2>
-                <h3>Product name</h3>
+                <h2 className="text-gray-500">Company name</h2>
+                <h3 className="text-2xl font-bold">Product name</h3>
                 <p>ratings</p>
                 <em>Price: XX</em>
                 <p>options</p>
@@ -24,7 +22,8 @@ export const ProductDetails = () => {
                 <button>Add to cart</button>
                 <button>Buy Now</button>
             </div>
-            <div>Detailed description and ratings breakdown</div>
+        </div>
+        <div>Detailed description and ratings breakdown</div>
         </div>
         </>
     );
