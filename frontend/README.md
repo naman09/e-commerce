@@ -27,6 +27,7 @@ npm run build
 "https://picsum.photos/800/400?3",
 
 ## Next steps
+
 - [ x ] All pages wireframe - product details, user details, checkout cart, order history, order details, payment success/failure
 - [ ] Product Details Page
 - [ x ] Move code from home.tsx to a HomePage component
@@ -34,7 +35,6 @@ npm run build
 - [ ] admin portal to enter data
 - [ x ] run lint, prettier check on my code
 - [ ] Search nav bar - fix it at top like current navbar
-
 
 # Learning goals
 
@@ -48,6 +48,6 @@ npm run build
 - what goes in the description of meta tags - SEO related stuff ??
 - Correct alt texts of image
 
-
 ## What is BlueWhale
+
 Website for small e-commerce vendors usable in real world

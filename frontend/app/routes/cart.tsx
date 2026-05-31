@@ -13,5 +13,5 @@ export function meta() {
 }
 
 export default function Cart() {
-  return <CheckoutPage /> ;
+  return <CheckoutPage />;
 }

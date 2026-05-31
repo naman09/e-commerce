@@ -13,5 +13,5 @@ export function meta() {
 }
 
 export default function PostPayment() {
-  return <PostPaymentPage /> ;
+  return <PostPaymentPage />;
 }

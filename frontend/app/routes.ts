@@ -8,5 +8,5 @@ export default [
   route("profile", "routes/profile.tsx"),
   route("orders", "routes/orders.tsx"),
   route("order/:id", "routes/order.tsx"),
-  route("payment", "routes/post-payment.tsx")
+  route("payment", "routes/post-payment.tsx"),
 ] satisfies RouteConfig;

@@ -13,5 +13,5 @@ export function meta() {
 }
 
 export default function Marketplace() {
-  return <MarketplacePage /> ;
+  return <MarketplacePage />;
 }
