@@ -13,9 +13,5 @@ export function meta() {
 }
 
 export default function Product() {
-  return (
-    <>
-      <ProductDetails />
-    </>
-  );
+  return <ProductDetails />;
 }

@@ -13,9 +13,5 @@ export function meta() {
 }
 
 export default function Orders() {
-  return (
-    <>
-      <OrderHistoryPage />
-    </>
-  );
+  return <OrderHistoryPage />;
 }

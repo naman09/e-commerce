@@ -13,9 +13,5 @@ export function meta() {
 }
 
 export default function Profile() {
-  return (
-    <>
-      <ProfilePage />
-    </>
-  );
+  return <ProfilePage />;
 }
