@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import { TopNavBar } from "../SearchBar/TopNavBar";
 import { ImageCard } from "./ImageCard";
 import { Rating } from "./Rating";
+import { Price } from "./Price";
 
 export interface Product {
   id: string;
@@ -41,7 +42,7 @@ export const ProductDetails = () => {
               <Rating rating={4.2} />
               <p className="text-xs underline">128 reviews</p>
             </div>
-            <em>Price: XX</em>
+            <Price currencyCode="INR" amount={89.99}/>
             <p>options</p>
             <button>select qty</button>
             <button>Add to cart</button>
