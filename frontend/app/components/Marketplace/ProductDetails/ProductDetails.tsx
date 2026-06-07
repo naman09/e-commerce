@@ -3,6 +3,7 @@ import { TopNavBar } from "../SearchBar/TopNavBar";
 import { ImageCard } from "./ImageCard";
 import { Rating } from "./Rating";
 import { Price } from "./Price";
+import { Options } from "./options";
 
 export interface Product {
   id: string;
@@ -20,8 +21,8 @@ export interface Company {
 }
 
 export interface Pricing {
-  price: number;
-  discountedFromPrice: number;
+  amount: number;
+  discountedFromPrice?: number;
   currencyCode: string;
 }
 
@@ -43,7 +44,7 @@ export const ProductDetails = () => {
               <p className="text-xs underline">128 reviews</p>
             </div>
             <Price currencyCode="INR" amount={89.99}/>
-            <p>options</p>
+            <Options />
             <button>select qty</button>
             <button>Add to cart</button>
             <button>Buy Now</button>

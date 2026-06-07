@@ -30,6 +30,7 @@ npm run build
 
 - [ x ] All pages wireframe - product details, user details, checkout cart, order history, order details, payment success/failure
 - [ ] Product Details Page
+- [ ] Add recoil
 - [ x ] Move code from home.tsx to a HomePage component
 - [ ] Marketplace
 - [ ] admin portal to enter data
