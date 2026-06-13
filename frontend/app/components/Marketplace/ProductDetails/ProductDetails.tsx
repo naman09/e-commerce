@@ -3,7 +3,8 @@ import { TopNavBar } from "../SearchBar/TopNavBar";
 import { ImageCard } from "./ImageCard";
 import { Rating } from "./Rating";
 import { Price } from "./Price";
-import { Options } from "./options";
+import { Variants } from "./Variants";
+import { QuantitySelector } from "./QuantitySelector";
 
 export interface Product {
   id: string;
@@ -41,11 +42,13 @@ export const ProductDetails = () => {
             <h3 className="text-2xl font-bold">Product name</h3>
             <div className="flex gap-2">
               <Rating rating={4.2} />
-              <p className="text-xs underline">128 reviews</p>
+
+              {/* TODO: replace with a clickable component which redirects to review section */}
+              <p className="text-xs underline">128 reviews</p> 
             </div>
             <Price currencyCode="INR" amount={89.99}/>
-            <Options />
-            <button>select qty</button>
+            <Variants/>
+            <QuantitySelector />
             <button>Add to cart</button>
             <button>Buy Now</button>
           </div>

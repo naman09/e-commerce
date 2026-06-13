@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Price } from "./Price"
 import type { Pricing } from "./ProductDetails";
 
-const options: ProductOption[] = [
+const variants: ProductVariant[] = [
     {
         "id": "3",
         "name": "acv",
@@ -29,30 +29,30 @@ const options: ProductOption[] = [
     }
 ]
 
-export interface ProductOption {
+export interface ProductVariant {
     id: string;
     name: string;
     price: Pricing;
 }
 
-export const Options = () => {
+export const Variants = () => {
     // Product id will be set here which will change all the product details
 
     const [productId, setProductId] = useState<string>("3"); // TODO: replace with global state of product id using recoil
 
-    const handleClick = (option: ProductOption) => {
-        setProductId(option.id);
+    const handleClick = (variant: ProductVariant) => {
+        setProductId(variant.id);
     }
 
     return <div className="flex gap-2">
-        {options.map(option =>
+        {variants.map(variant =>
             <div 
-                key = {option.id}
-                onClick={() => handleClick(option)}
-                className={`border w-30 rounded-lg text-center border-gray-300 cursor-pointer p-2 ${option.id === productId ? "bg-amber-200" : "bg-white"}`}
+                key = {variant.id}
+                onClick={() => handleClick(variant)}
+                className={`border w-30 rounded-lg text-center border-gray-300 cursor-pointer p-2 ${variant.id === productId ? "bg-amber-200" : "bg-white"}`}
             >
-                <div className="truncate">{option.name}</div>
-                <Price amount={option.price.amount} currencyCode={option.price.currencyCode} />
+                <div className="truncate">{variant.name}</div>
+                <Price amount={variant.price.amount} currencyCode={variant.price.currencyCode} />
             </div>
         )}
     </div>
