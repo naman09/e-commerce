@@ -1,4 +1,3 @@
-import Tippy from "@tippyjs/react";
 import { useState } from "react";
 
 export const QuantitySelector = () => {
@@ -22,9 +21,9 @@ export const QuantitySelector = () => {
             onClick={() => updateQty(-1)}>
                 -
         </button>
-        {/* <Tippy content={qty} placement="bottom-start" className="bg-black text-white px-2" arrow={true}> */}
-            <div className="w-8 truncate">{`${qty}`}</div>
-        {/* </Tippy> */}
+
+        <div className="w-8 truncate">{`${qty}`}</div>
+        
         <button 
             className="border p-1 px-4 rounded-lg border-neutral-300 shadow-sm cursor-pointer bg-gray-100 hover:bg-white"
             onClick={() => updateQty(1)}>
