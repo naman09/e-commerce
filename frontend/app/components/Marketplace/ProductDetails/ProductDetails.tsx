@@ -5,6 +5,7 @@ import { Rating } from "./Rating";
 import { Price } from "./Price";
 import { Variants } from "./Variants";
 import { QuantitySelector } from "./QuantitySelector";
+import { Button } from "~/components/Commons/Button";
 
 export interface Product {
   id: string;
@@ -44,13 +45,15 @@ export const ProductDetails = () => {
               <Rating rating={4.2} />
 
               {/* TODO: replace with a clickable component which redirects to review section */}
-              <p className="text-xs underline">128 reviews</p> 
+              <p className="text-xs underline">128 reviews</p>
             </div>
-            <Price currencyCode="INR" amount={89.99}/>
-            <Variants/>
+            <Price currencyCode="INR" amount={89.99} />
+            <Variants />
             <QuantitySelector />
-            <button>Add to cart</button>
-            <button>Buy Now</button>
+            <div className="flex flex-col gap-2">
+              <Button label="Add to cart" />
+              <Button label="Buy now" />
+            </div>
           </div>
         </div>
         <div>Detailed description and ratings breakdown</div>

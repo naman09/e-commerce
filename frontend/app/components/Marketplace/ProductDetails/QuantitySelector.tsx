@@ -1,33 +1,36 @@
 import { useState } from "react";
 
 export const QuantitySelector = () => {
+  const qtySelected: number = 2000;
 
-    const qtySelected:number = 2000;
+  const [qty, setQty] = useState<number>(qtySelected);
 
-    const [qty, setQty] = useState<number>(qtySelected);
+  const updateQty = (increment: number) => {
+    let newQty = qty + increment;
 
-    const updateQty = (increment: number) => {
-        let newQty = qty + increment;
+    if (newQty < 0) newQty = 0;
 
-        if (newQty < 0) newQty = 0;
+    setQty(newQty);
+  };
 
-        setQty(newQty);
-    }
+  return (
+    <div className="flex items-center gap-8 my-3">
+      <div>Qty</div>
+      <button
+        className={`border p-1 px-4 rounded-lg border-neutral-300 shadow-sm cursor-pointer ${qty === 0 ? "bg-gray-300" : "bg-gray-100 hover:bg-white"}`}
+        onClick={() => updateQty(-1)}
+      >
+        -
+      </button>
 
-    return <div className="flex items-center gap-8 my-2">
-        <div>Qty</div>
-        <button 
-            className={`border p-1 px-4 rounded-lg border-neutral-300 shadow-sm cursor-pointer ${qty === 0 ? "bg-gray-300" : "bg-gray-100 hover:bg-white"}`}
-            onClick={() => updateQty(-1)}>
-                -
-        </button>
+      <div className="w-10 truncate">{`${qty}`}</div>
 
-        <div className="w-8 truncate">{`${qty}`}</div>
-        
-        <button 
-            className="border p-1 px-4 rounded-lg border-neutral-300 shadow-sm cursor-pointer bg-gray-100 hover:bg-white"
-            onClick={() => updateQty(1)}>
-                +
-        </button>
+      <button
+        className="border p-1 px-4 rounded-lg border-neutral-300 shadow-sm cursor-pointer bg-gray-100 hover:bg-white"
+        onClick={() => updateQty(1)}
+      >
+        +
+      </button>
     </div>
-}
+  );
+};
