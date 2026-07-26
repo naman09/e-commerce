@@ -6,6 +6,7 @@ import { Price } from "./Price";
 import { Variants } from "./Variants";
 import { QuantitySelector } from "./QuantitySelector";
 import { Button } from "~/components/Commons/Button";
+import { FileText, LayoutList } from "lucide-react";
 
 export interface Product {
   id: string;
@@ -56,7 +57,35 @@ export const ProductDetails = () => {
             </div>
           </div>
         </div>
-        <div>Detailed description and ratings breakdown</div>
+        <div>
+          <div className="flex"><FileText /> Description</div>
+          <p>Engineered for performance and comfort, the CloudStride Pro delivers responsive cushioning across every stride. Built with a breathable mesh upper and dual-density foam midsole.
+          </p>
+        </div>
+
+        <div>
+        <div className="flex"><LayoutList /> Details </div>
+          <table className="border">
+            <tbody>
+              <tr className="border">
+                <td>Weight</td>
+                <td>280g (size 9)</td>
+                <td>8mm</td>
+              </tr>
+              <tr>
+                <td>Upper</td>
+                <td>280g (size 9)</td>
+                <td>8mm</td>
+              </tr>
+              <tr>
+                <td>Outsole</td>
+                <td>Carbon rubber SKU</td>
+                <td>AS-CSP-OBL-09</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>description Specs and reviews</div>
       </div>
     </>
   );
