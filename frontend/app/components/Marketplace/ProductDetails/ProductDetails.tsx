@@ -6,7 +6,8 @@ import { Price } from "./Price";
 import { Variants } from "./Variants";
 import { QuantitySelector } from "./QuantitySelector";
 import { Button } from "~/components/Commons/Button";
-import { FileText, LayoutList } from "lucide-react";
+import { FileText, LayoutList, Star } from "lucide-react";
+import ProgressBar from "~/components/Commons/ProgressBar";
 
 export interface Product {
   id: string;
@@ -36,7 +37,7 @@ export const ProductDetails = () => {
     <>
       <TopNavBar />
       <h1>Product details with id: {id}</h1>
-      <div className="ml-10">
+      <div className="mx-10">
         <div className="flex flex-wrap gap-5">
           <ImageCard />
           <div>
@@ -58,34 +59,31 @@ export const ProductDetails = () => {
           </div>
         </div>
         <div>
-          <div className="flex"><FileText /> Description</div>
+          <div className="flex gap-2"><FileText /> Description</div>
           <p>Engineered for performance and comfort, the CloudStride Pro delivers responsive cushioning across every stride. Built with a breathable mesh upper and dual-density foam midsole.
           </p>
         </div>
 
         <div>
-        <div className="flex"><LayoutList /> Details </div>
-          <table className="border">
-            <tbody>
-              <tr className="border">
-                <td>Weight</td>
-                <td>280g (size 9)</td>
-                <td>8mm</td>
-              </tr>
-              <tr>
-                <td>Upper</td>
-                <td>280g (size 9)</td>
-                <td>8mm</td>
-              </tr>
-              <tr>
-                <td>Outsole</td>
-                <td>Carbon rubber SKU</td>
-                <td>AS-CSP-OBL-09</td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="flex gap-2"><LayoutList /> Details and Specs</div>
+            <ul className="list-disc">
+              <li>Weight</li>
+              <li>280g (size 9)</li>
+              <li>Outsole</li>
+              <li>Carbon rubber SKU</li>
+            </ul>
         </div>
-        <div>description Specs and reviews</div>
+        <div>
+          <div className="flex gap-2"><Star /> Reviews</div>
+          <div className="grid grid-flow-col grid-rows-5 gap-4">
+            <div className="row-span-5"><Rating rating={4.2} /> </div>
+            <div className="col-span-2"><ProgressBar progress={30} classNames="bg-yellow-400"/></div>
+            <div className="col-span-2"><ProgressBar progress={20} classNames="bg-yellow-400"/></div>
+            <div className="col-span-2"><ProgressBar progress={20} classNames="bg-yellow-400"/></div>
+            <div className="col-span-2"><ProgressBar progress={40} classNames="bg-yellow-400"/></div>
+            <div className="col-span-2"><ProgressBar progress={27} classNames="bg-yellow-400"/></div>
+          </div>
+        </div>
       </div>
     </>
   );
