@@ -1,13 +1,14 @@
 import { useParams } from "react-router";
 import { TopNavBar } from "../SearchBar/TopNavBar";
 import { ImageCard } from "./ImageCard";
-import { Rating } from "./Rating";
+import { Rating } from "./CustomerReviews/Rating";
 import { Price } from "./Price";
 import { Variants } from "./Variants";
 import { QuantitySelector } from "./QuantitySelector";
 import { Button } from "~/components/Commons/Button";
 import { FileText, LayoutList, Star } from "lucide-react";
 import ProgressBar from "~/components/Commons/ProgressBar";
+import { ReviewList } from "./CustomerReviews/ReviewList";
 
 export interface Product {
   id: string;
@@ -59,13 +60,13 @@ export const ProductDetails = () => {
           </div>
         </div>
         <div>
-          <div className="flex gap-2"><FileText /> Description</div>
+          <div className="flex gap-2 items-center"><FileText className="h-4 w-4"/> Description</div>
           <p>Engineered for performance and comfort, the CloudStride Pro delivers responsive cushioning across every stride. Built with a breathable mesh upper and dual-density foam midsole.
           </p>
         </div>
 
         <div>
-        <div className="flex gap-2"><LayoutList /> Details and Specs</div>
+        <div className="flex gap-2 items-center"><LayoutList className="h-4 w-4"/> Details and Specs</div>
             <ul className="list-disc">
               <li>Weight</li>
               <li>280g (size 9)</li>
@@ -73,8 +74,9 @@ export const ProductDetails = () => {
               <li>Carbon rubber SKU</li>
             </ul>
         </div>
+
         <div>
-          <div className="flex gap-2"><Star /> Reviews</div>
+          <div className="flex gap-2 items-center"><Star className="h-4 w-4" /> Reviews</div>
           <div className="grid grid-flow-col grid-rows-5 gap-4">
             <div className="row-span-5"><Rating rating={4.2} /> </div>
             <div className="col-span-2"><ProgressBar progress={30} classNames="bg-yellow-400"/></div>
@@ -84,6 +86,9 @@ export const ProductDetails = () => {
             <div className="col-span-2"><ProgressBar progress={27} classNames="bg-yellow-400"/></div>
           </div>
         </div>
+
+        <ReviewList />
+
       </div>
     </>
   );
