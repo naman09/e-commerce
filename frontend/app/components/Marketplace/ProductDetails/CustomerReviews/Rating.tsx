@@ -2,6 +2,7 @@ import { Star } from "lucide-react";
 
 export interface RatingProps {
   rating: number;
+  showOnlyStars?: boolean 
 }
 
 export const Rating = (props: RatingProps) => {
@@ -18,7 +19,7 @@ export const Rating = (props: RatingProps) => {
         />
       ))}
 
-      <p className="text-xs">{props.rating}</p>
+      { !props.showOnlyStars && <p className="text-xs">{props.rating}</p> }
     </div>
   );
 };
