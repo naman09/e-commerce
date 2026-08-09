@@ -31,6 +31,14 @@ export interface Pricing {
   currencyCode: string;
 }
 
+const percPerRating = {
+  5: 62,
+  4: 20,
+  3: 10,
+  2: 5,
+  1: 3
+}
+
 export const ProductDetails = () => {
   const { id } = useParams();
 
@@ -75,15 +83,20 @@ export const ProductDetails = () => {
             </ul>
         </div>
 
-        <div>
+        <div className="mb-20 mt-5">
           <div className="flex gap-2 items-center"><Star className="h-4 w-4" /> Reviews</div>
-          <div className="grid grid-flow-col grid-rows-5 gap-4">
-            <div className="row-span-5"><Rating rating={4.2} /> </div>
-            <div className="col-span-2"><ProgressBar progress={30} classNames="bg-yellow-400"/></div>
-            <div className="col-span-2"><ProgressBar progress={20} classNames="bg-yellow-400"/></div>
-            <div className="col-span-2"><ProgressBar progress={20} classNames="bg-yellow-400"/></div>
-            <div className="col-span-2"><ProgressBar progress={40} classNames="bg-yellow-400"/></div>
-            <div className="col-span-2"><ProgressBar progress={27} classNames="bg-yellow-400"/></div>
+          {/* <ProgressBar progress={30} classNames="bg-yellow-400"/> */}
+          <div className="flex">
+            <div className="size-14 grow-3"><Rating rating={4.2} /> </div>
+            <div className="size-14 grow-11">
+            {Object.entries(percPerRating)
+              .sort()
+              .reverse()
+              .map(([ratingLevel, percent]) => 
+                <ProgressBar label={ratingLevel} progress={percent} classNames="bg-yellow-400"/> 
+              )
+            }
+            </div>
           </div>
         </div>
 
