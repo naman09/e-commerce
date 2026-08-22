@@ -53,7 +53,7 @@ export const ProductDetails = () => {
             <h2 className="text-gray-500">Company name</h2>
             <h3 className="text-2xl font-bold">Product name</h3>
             <div className="flex gap-2">
-              <Rating rating={4.2} />
+              <Rating rating={4.2} variant={"SMALL"}/>
 
               {/* TODO: replace with a clickable component which redirects to review section */}
               <p className="text-xs underline">128 reviews</p>
@@ -67,27 +67,30 @@ export const ProductDetails = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div className="flex gap-2 items-center"><FileText className="h-4 w-4"/> Description</div>
+
+        <div className="my-5">
+          <div className="flex gap-2 items-center text-2xl font-semibold"><FileText className="h-5 w-5"/> Description</div>
+          <hr className="border-gray-200 my-3"/>
           <p>Engineered for performance and comfort, the CloudStride Pro delivers responsive cushioning across every stride. Built with a breathable mesh upper and dual-density foam midsole.
           </p>
         </div>
 
-        <div>
-        <div className="flex gap-2 items-center"><LayoutList className="h-4 w-4"/> Details and Specs</div>
-            <ul className="list-disc">
-              <li>Weight</li>
-              <li>280g (size 9)</li>
-              <li>Outsole</li>
-              <li>Carbon rubber SKU</li>
-            </ul>
+        <div className="my-5">
+          <div className="flex gap-2 items-center text-2xl font-semibold"><LayoutList className="h-5 w-5"/> Details and Specs</div>
+          <hr className="border-gray-200 my-3"/>
+          <ul className="list-disc">
+            <li>Weight</li>
+            <li>280g (size 9)</li>
+            <li>Outsole</li>
+            <li>Carbon rubber SKU</li>
+          </ul>
         </div>
 
-        <div className="mb-20 mt-5">
-          <div className="flex gap-2 items-center"><Star className="h-4 w-4" /> Reviews</div>
-          {/* <ProgressBar progress={30} classNames="bg-yellow-400"/> */}
+        <div className="mb-30">
+          <div className="flex gap-2 items-center text-2xl font-semibold"><Star className="h-5 w-5" /> Reviews</div>
+          <hr className="border-gray-200 my-3"/>
           <div className="flex">
-            <div className="size-14 grow-3"><Rating rating={4.2} /> </div>
+            <div className="size-14 grow-3"><Rating rating={4.2} variant={"BIG"}/> </div>
             <div className="size-14 grow-11">
             {Object.entries(percPerRating)
               .sort()

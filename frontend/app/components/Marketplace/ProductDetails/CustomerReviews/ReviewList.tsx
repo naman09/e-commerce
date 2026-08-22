@@ -1,5 +1,5 @@
 import { Rating } from "./Rating";
-import { RatingCard } from "./RatingCard";
+import { ReviewCard } from "./ReviewCard";
 
 export interface Review {
     description: string;
@@ -56,7 +56,7 @@ const mockReviews : Review[] = [
 
 export const ReviewList = () => {
     return <div className="flex flex-col gap-5 my-5">
-        {mockReviews.map(review => <RatingCard 
+        {mockReviews.map(review => <ReviewCard 
             key={review.id} 
             description = {review.description}
             name="Abc"
