@@ -55,7 +55,7 @@ const mockReviews : Review[] = [
 ]
 
 export const ReviewList = () => {
-    return <div className="flex flex-col gap-5 my-5">
+    return <div className="flex flex-col gap-5">
         {mockReviews.map(review => <ReviewCard 
             key={review.id} 
             description = {review.description}

@@ -86,19 +86,19 @@ export const ProductDetails = () => {
           </ul>
         </div>
 
-        <div className="mb-30">
+        <div className="my-5">
           <div className="flex gap-2 items-center text-2xl font-semibold"><Star className="h-5 w-5" /> Reviews</div>
           <hr className="border-gray-200 my-3"/>
           <div className="flex">
-            <div className="size-14 grow-3"><Rating rating={4.2} variant={"BIG"}/> </div>
-            <div className="size-14 grow-11">
-            {Object.entries(percPerRating)
-              .sort()
-              .reverse()
-              .map(([ratingLevel, percent]) => 
-                <ProgressBar label={ratingLevel} progress={percent} classNames="bg-yellow-400"/> 
-              )
-            }
+            <div className="w-1/5"><Rating rating={4.2} variant={"BIG"}/></div>
+            <div className="w-4/5">
+              {Object.entries(percPerRating)
+                .sort()
+                .reverse()
+                .map(([ratingLevel, percent]) => 
+                  <ProgressBar label={ratingLevel} progress={percent} classNames="bg-yellow-400"/> 
+                )
+              }
             </div>
           </div>
         </div>
