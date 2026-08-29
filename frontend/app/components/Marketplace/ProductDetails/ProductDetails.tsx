@@ -89,7 +89,7 @@ export const ProductDetails = () => {
         <div className="my-5">
           <div className="flex gap-2 items-center text-2xl font-semibold"><Star className="h-5 w-5" /> Reviews</div>
           <hr className="border-gray-200 my-3"/>
-          <div className="flex">
+          <div className="flex gap-2">
             <div className="w-1/5"><Rating rating={4.2} variant={"BIG"}/></div>
             <div className="w-4/5">
               {Object.entries(percPerRating)

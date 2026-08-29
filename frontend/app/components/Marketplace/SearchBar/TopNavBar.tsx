@@ -1,7 +1,10 @@
+import { useUserStore } from "~/state/userStore";
 import { TopNavBarItem } from "./TopNavBarItem";
 
 export const TopNavBar = () => {
   const navBarItems = ["Cart", "User"];
+
+  const userId = useUserStore((state) => state.userId); 
 
   return (
     <div className="flex justify-between sticky top-0 z-10 px-10 py-2">
@@ -25,6 +28,8 @@ export const TopNavBar = () => {
         {navBarItems.map((navBarItem) => (
           <TopNavBarItem key={navBarItem} label={navBarItem} />
         ))}
+
+        {userId}
       </div>
     </div>
   );

@@ -10,8 +10,9 @@ export const Rating = (props: RatingProps) => {
 
   if (props.variant === "BIG") {
     return (
-      <div className="flex flex-col items-center gap-1">
-        <p className="text-6xl font-medium">{props.rating}</p>
+      <div className="flex flex-col items-center gap-2">
+        {/* TODO: update size based on screen size */}
+        <p className="text-5xl font-medium">{props.rating}</p>
 
         <div className="flex gap-x-1">
           {[1, 2, 3, 4, 5].map((star) => (
