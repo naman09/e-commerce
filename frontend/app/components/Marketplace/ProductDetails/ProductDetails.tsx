@@ -45,7 +45,6 @@ export const ProductDetails = () => {
   return (
     <div className="bg-grey-20">
       <TopNavBar />
-      <h1>Product details with id: {id}</h1>
       <div className="mx-10">
         <div className="flex flex-wrap gap-5">
           <ImageCard />
@@ -96,7 +95,7 @@ export const ProductDetails = () => {
                 .sort()
                 .reverse()
                 .map(([ratingLevel, percent]) => 
-                  <ProgressBar label={ratingLevel} progress={percent} classNames="bg-yellow-400"/> 
+                  <ProgressBar key={ratingLevel} label={ratingLevel} progress={percent} classNames="bg-yellow-400"/> 
                 )
               }
             </div>

@@ -38,6 +38,7 @@ npm run build
 - [ ] Search nav bar - fix it at top like current navbar
 - [ ] Search nav bar - return results from picklist
 - [ ] Footer
+- [ ] Search nav bar - remember user history in browser
 
 # Learning goals
 
