@@ -1,6 +1,26 @@
 import { useUserStore } from "~/state/userStore";
 import { TopNavBarItem } from "./TopNavBarItem";
 
+export interface SearchResult {
+  title: string;
+  space: number;
+}
+
+const searchResults: SearchResult[] = [
+  {
+    title: "item1",
+    space: 10
+  },
+  {
+    title: "item2",
+    space: 15
+  },
+  {
+    title: "item3",
+    space: 20
+  }
+];
+
 export const TopNavBar = () => {
   const navBarItems = ["Cart", "User"];
 
@@ -16,17 +36,22 @@ export const TopNavBar = () => {
         />
         <h1 className="text-3xl">&nbsp;BWC Marketplace</h1>
       </div>
-      <div className="flex relative grow">
+      <div className="flex relative grow bg-white rounded-t-4xl">
         <input
           type="text"
           name="global-search-input"
           autoComplete="off"
           placeholder="Search"
-          className="border border-gray-300 pl-3 rounded-full w-full focus:outline-gray-400 bg-blue-200"
+          className="border border-gray-300 pl-3 rounded-full w-full focus:border-transparent focus:outline-none bg-white"
         />
 
-        <div className="absolute top-full left-0 right-0 bg-white p-5 rounded-b-lg border">
-          Item 1
+        <div className="absolute left-0 right-0 top-full">
+          {searchResults.map(item => <>
+              <div key={item.title} className="bg-white p-5 border border-gray-300">
+                {item.title}
+              </div>
+            </>
+          )}
         </div>
         
       </div>
