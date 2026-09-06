@@ -32,13 +32,20 @@ npm run build
 - [ x ] Product Details Page
 - [ x ] Add ~~recoil Zustand
 - [ x ] Move code from home.tsx to a HomePage component
-- [ ] Marketplace
+- [ ] Marketplace Page Fix
+- [ ] Customer support Page
 - [ ] admin portal to enter data
 - [ x ] run lint, prettier check on my code
-- [ ] Search nav bar - fix it at top like current navbar
-- [ ] Search nav bar - return results from picklist
+- [ x ] Search nav bar - fix it at top like current navbar
+- [ x ] Search nav bar - return results from picklist
 - [ ] Footer
 - [ ] Search nav bar - remember user history in browser
+- [ ] Refactor - Combine search nav bar and top nav bar 
+- [ ] Clicks - Brand icon click should take me to home page
+- [ ] Clicks - Marketplace icon click should take me to marketplace page
+- [ ] SEO - update meta tags
+- [ ] A11y - Test and find issues
+ 
 
 # Learning goals
 
