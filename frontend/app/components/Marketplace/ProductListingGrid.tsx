@@ -70,6 +70,7 @@ const products: Product[] = [
   },
 ];
 
+// TODO: only send product id
 export const ProductListingGrid = () => {
   return (
     <>

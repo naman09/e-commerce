@@ -32,6 +32,8 @@ npm run build
 - [ x ] Product Details Page
 - [ x ] Add ~~recoil Zustand
 - [ x ] Move code from home.tsx to a HomePage component
+- [ ] Order History wireframe
+- [ ] Track Order Page using Zustand
 - [ ] Marketplace Page Fix
 - [ ] Customer support Page
 - [ ] admin portal to enter data
