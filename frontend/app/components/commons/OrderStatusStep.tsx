@@ -1,14 +1,27 @@
+import type { LucideProps } from "lucide-react";
+import type { ForwardRefExoticComponent, RefAttributes } from "react";
+
 export interface OrderStatusStepProps {
-    icon: any;
+    icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
     label: string;
+    isDisabled: boolean;
 }
 
 export const OrderStatusStep = (props: OrderStatusStepProps) => {
     const Icon = props.icon;
-    return <div className="flex flex-col items-center">
-          <div className="bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center">
-            <Icon className="text-white"/>
+
+    let bgColor = 'bg-blue-400';
+
+    if (props.isDisabled) {
+        bgColor = "bg-gray-400";
+    }
+
+    return (
+        <div className="flex flex-col items-center">
+            <div className={"w-12 h-12 rounded-full flex items-center justify-center " + bgColor}>
+                <Icon className="text-white" />
+            </div>
+            <p className="w-20 text-center">{props.label}</p>
         </div>
-        <p className="w-20 text-center">{props.label}</p>
-    </div>
+    );
 }
