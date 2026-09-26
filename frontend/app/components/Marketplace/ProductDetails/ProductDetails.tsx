@@ -5,10 +5,10 @@ import { Rating } from "./CustomerReviews/Rating";
 import { Price } from "./Price";
 import { Variants } from "./Variants";
 import { QuantitySelector } from "./QuantitySelector";
-import { Button } from "~/components/Commons/Button";
 import { FileText, LayoutList, Star } from "lucide-react";
-import ProgressBar from "~/components/Commons/ProgressBar";
 import { ReviewList } from "./CustomerReviews/ReviewList";
+import { Button } from "../../commons/Button"
+import ProgressBar from "../../commons/ProgressBar"
 
 export interface Product {
   id: string;
@@ -43,7 +43,7 @@ export const ProductDetails = () => {
   const { id } = useParams();
 
   return (
-    <div className="bg-grey-20">
+    <div className="bg-gray-50">
       <TopNavBar />
       <div className="mx-10">
         <div className="flex flex-wrap gap-5">

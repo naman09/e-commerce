@@ -10,7 +10,7 @@ export interface OrderStatusStepProps {
 export const OrderStatusStep = (props: OrderStatusStepProps) => {
     const Icon = props.icon;
 
-    let bgColor = 'bg-blue-400';
+    let bgColor = 'bg-blue-500';
 
     if (props.isDisabled) {
         bgColor = "bg-gray-400";

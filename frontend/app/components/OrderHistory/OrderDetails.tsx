@@ -4,6 +4,7 @@ import { useOrderStore } from "~/state/orderStore";
 import { Box, Check, House, MapPin, ShoppingBag, Truck, X, type LucideProps } from "lucide-react";
 import { OrderStatusStep } from "../commons/OrderStatusStep";
 import type { ForwardRefExoticComponent, RefAttributes } from "react";
+import { Button } from "../commons/Button";
 
 
 export interface OrderStatusStepDetails {
@@ -74,22 +75,46 @@ export const OrderDetails = () => {
   }
 
   return (
-    <div className="m-10">
+    <div className="m-10 bg-gray-100">
       <div className="flex justify-between">
         <div className="text-gray-600">Order {id}</div>
         
-        <div className=" border-gray-100 bg-green-200 text-green-800 rounded-md font-semibold px-2 py-1">on the way</div>
+        <div className="bg-green-200 text-green-800 rounded-md font-semibold px-2 py-1">on the way</div>
       </div>
       <div className="text-4xl font-bold">Arriving Thursday</div>
 
-      <div className="flex gap-10">
-        {sampleOrderStatusSteps.map(step => <OrderStatusStep 
-          key={step.stepLabel} 
-          icon={getStepIcon(step)} 
-          label={"Placed"} 
-          isDisabled={step.status === "NOT_STARTED"}
-          /> 
-        )}
+      <div className="border border-gray-300 rounded-xl">
+
+        <div className="flex gap-10 pt-10 px-10">
+          {sampleOrderStatusSteps.map((step, idx) => {
+
+              let showLines = true;
+
+              if (idx === sampleOrderStatusSteps.length-1) {
+                showLines = false;
+              }
+            
+              return <>
+                <OrderStatusStep 
+                  key={step.stepLabel} 
+                  icon={getStepIcon(step)} 
+                  label={"Placed"} 
+                  isDisabled={step.status === "NOT_STARTED"}
+                /> 
+                {showLines && <div className="h-0.5 flex-1 bg-sky-600 mt-4"></div>}
+              </>
+            }
+          )}
+        </div>
+
+        <hr className="border-gray-400 mx-10 mt-10 mb-5"/>
+
+        <div className="flex px-10 justify-between pb-5">
+          <div>Carrier fast go losgitics- Tracking#12340 </div>
+
+          <Button label="Cancel order" />
+        </div>
+
       </div>
 
       <OrderStatusStep icon={Check} label={"Complete Sample"} isDisabled/>
