@@ -34,13 +34,13 @@ const sampleOrderStatusSteps: OrderStatusStepDetails[] = [
   },
   {
     stepLabel: "Packed",
-    status: 'COMPLETED',
+    status: 'IN_PROGRESS',
     expectedCompletionDate: new Date(),
     actualCompletionDate: new Date()
   },
   {
     stepLabel: "Shipped",
-    status: 'IN_PROGRESS',
+    status: 'NOT_STARTED',
     expectedCompletionDate: new Date(),
     actualCompletionDate: new Date()
   },
@@ -83,25 +83,53 @@ export const OrderDetails = () => {
       </div>
       <div className="text-4xl font-bold">Arriving Thursday</div>
 
+
+       
+
       <div className="border border-gray-300 rounded-xl">
 
         <div className="flex gap-10 pt-10 px-10">
           {sampleOrderStatusSteps.map((step, idx) => {
 
+            // TODO: refactor
+
               let showLines = true;
 
-              if (idx === sampleOrderStatusSteps.length-1) {
+              let stepDisabled = false;
+
+              let nextLineStatus: "NOT_STARTED" | "IN_PROGRESS" | "COMPLETED" = "NOT_STARTED";
+
+              if (idx === 0) {
                 showLines = false;
               }
+
+              if (step.status === "IN_PROGRESS") {
+                nextLineStatus = "IN_PROGRESS";
+              }
+
+              if (step.status === "COMPLETED") {
+                nextLineStatus = "COMPLETED";
+              }
             
+              if (step.status === "NOT_STARTED") {
+                nextLineStatus = "NOT_STARTED"
+                stepDisabled = true;
+              }
+
               return <>
+                {showLines && nextLineStatus === "NOT_STARTED" && <div className="h-0.5 flex-1 bg-gray-400 mt-4"></div>}
+                {showLines && nextLineStatus === "COMPLETED" && <div className="h-0.5 flex-1 bg-sky-600 mt-4"></div>}
+                {showLines && nextLineStatus === "IN_PROGRESS" && <div className="h-0.5 flex flex-1 mt-4">
+                  <div className="flex-1 bg-sky-600"></div>
+                  <div className="flex-1 bg-gray-400"></div>
+                </div>}
+
                 <OrderStatusStep 
                   key={step.stepLabel} 
                   icon={getStepIcon(step)} 
-                  label={"Placed"} 
-                  isDisabled={step.status === "NOT_STARTED"}
-                /> 
-                {showLines && <div className="h-0.5 flex-1 bg-sky-600 mt-4"></div>}
+                  label={step.stepLabel} 
+                  isDisabled={stepDisabled}
+                />
               </>
             }
           )}
