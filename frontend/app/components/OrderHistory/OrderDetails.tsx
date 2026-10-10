@@ -5,6 +5,7 @@ import { Box, Check, House, MapPin, ShoppingBag, Truck, X, type LucideProps } fr
 import { OrderStatusStep } from "../commons/OrderStatusStep";
 import type { ForwardRefExoticComponent, RefAttributes } from "react";
 import { Button } from "../commons/Button";
+import { ItemList } from "./ItemList";
 
 
 export interface OrderStatusStepDetails {
@@ -75,20 +76,18 @@ export const OrderDetails = () => {
   }
 
   return (
-    <div className="m-10 bg-gray-100">
+    <div className="p-10 bg-gray-50">
+
       <div className="flex justify-between">
         <div className="text-gray-600">Order {id}</div>
-        
         <div className="bg-green-200 text-green-800 rounded-md font-semibold px-2 py-1">on the way</div>
       </div>
+      
       <div className="text-4xl font-bold">Arriving Thursday</div>
-
-
        
+      <div className="my-5 border border-gray-300 rounded-xl bg-white px-10 pb-5 pt-10">
 
-      <div className="border border-gray-300 rounded-xl">
-
-        <div className="flex gap-10 pt-10 px-10">
+        <div className="flex gap-10">
           {sampleOrderStatusSteps.map((step, idx) => {
 
             // TODO: refactor
@@ -130,26 +129,25 @@ export const OrderDetails = () => {
                   label={step.stepLabel} 
                   isDisabled={stepDisabled}
                 />
+
+                {/* <OrderStatusStep icon={X} label={"Cancelled Sample"} isDisabled={false}/> */}
               </>
             }
           )}
         </div>
 
-        <hr className="border-gray-400 mx-10 mt-10 mb-5"/>
+        <hr className="border-gray-400 mt-10 mb-5"/>
 
-        <div className="flex px-10 justify-between pb-5">
+        <div className="flex justify-between">
           <div>Carrier fast go losgitics- Tracking#12340 </div>
-
           <Button label="Cancel order" />
         </div>
 
       </div>
 
-      <OrderStatusStep icon={Check} label={"Complete Sample"} isDisabled/>
-
-      <OrderStatusStep icon={X} label={"Cancelled Sample"} isDisabled={false}/>
-      <div>
-        {orderDetails?.items.map(item => <div>{item.name}</div>)}
+      <div className="my-5 border border-gray-300 rounded-xl bg-white px-10 py-5">
+        <div className="text-2xl font-bold">Items in this order</div>
+        {orderDetails?.items && <ItemList items={orderDetails.items} />}
       </div>
     </div>
   );
