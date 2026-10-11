@@ -13,12 +13,13 @@ const mockOrders: Order[] = [
     items: [
       {
         id: "item-12",
-        name: "abc",
+        name: "Merino Wool Crweneck, charcoal",
         buyingPrice: pricing1,
+        imageUrl: "/app/assets/images/boliviainteligente-37WxvlfW3to-unsplash.jpg"
       },
       {
         id: "item-2",
-        name: "def",
+        name: "Canvas tote bag, natural",
         buyingPrice: pricing1,
       }
     ]

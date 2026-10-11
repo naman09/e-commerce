@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Price } from "./Price";
+import { Price } from "../../commons/Price";
 import type { Pricing } from "./ProductDetails";
 
 const variants: ProductVariant[] = [

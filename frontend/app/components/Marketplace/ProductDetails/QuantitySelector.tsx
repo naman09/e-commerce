@@ -23,6 +23,7 @@ export const QuantitySelector = () => {
         -
       </button>
 
+      {/* TODO: bug 2003 and 2005 is visible but 2004 gets truncated  */}
       <div className="w-10 truncate">{`${qty}`}</div>
 
       <button

@@ -10,6 +10,7 @@ export interface Item {
   id: string;
   name: string;
   buyingPrice: Pricing;
+  imageUrl?: string; 
 }
 
 export interface Order {

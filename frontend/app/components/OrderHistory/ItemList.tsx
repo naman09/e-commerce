@@ -1,3 +1,4 @@
+import { Price } from "../commons/Price";
 import type { Item } from "./OrderHistoryPage"
 import { SingleItem } from "./SingleItem";
 
@@ -7,29 +8,19 @@ export interface ItemListProps {
 
 export const ItemList = (props: ItemListProps) => {
 
-    const getTotalItem = (): Item => {
-        return {
-            id: 'custom',
-            name: 'total',
-            buyingPrice: {
-                amount: 100,
-                currencyCode: 'USD'
-            }
-        };
-    }
-
     return (
         <div>
             {props.items.map(item => {
                 return (
-                    <div>
+                    <div key={item.id}>
                         <SingleItem item={item}/>
                         <hr className="border-gray-400 my-3"/>
                     </div>
                 )
             })}
-            <div>
-                <SingleItem item={getTotalItem()} />
+            <div className="flex justify-between">
+                <div className="font-medium">Total</div>
+                <Price amount={1234} currencyCode="USD" />
             </div>
         </div>
     );

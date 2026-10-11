@@ -2,7 +2,7 @@ import { useParams } from "react-router";
 import { TopNavBar } from "../SearchBar/TopNavBar";
 import { ImageCard } from "./ImageCard";
 import { Rating } from "./CustomerReviews/Rating";
-import { Price } from "./Price";
+import { Price } from "../../commons/Price";
 import { Variants } from "./Variants";
 import { QuantitySelector } from "./QuantitySelector";
 import { FileText, LayoutList, Star } from "lucide-react";
