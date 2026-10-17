@@ -8,6 +8,11 @@ export interface ItemListProps {
 
 export const ItemList = (props: ItemListProps) => {
 
+    const getTotalAmount = () : number => {
+        // Assuming all items are in same currency
+        return props.items.reduce((acc, item) => acc + item.buyingPrice.amount, 0);
+    }
+
     return (
         <div>
             {props.items.map(item => {
@@ -20,7 +25,7 @@ export const ItemList = (props: ItemListProps) => {
             })}
             <div className="flex justify-between">
                 <div className="font-medium">Total</div>
-                <Price amount={1234} currencyCode="USD" />
+                <Price amount={getTotalAmount()} currencyCode="USD" />
             </div>
         </div>
     );

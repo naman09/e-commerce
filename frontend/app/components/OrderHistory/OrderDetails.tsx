@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import type { Order } from "./OrderHistoryPage";
 import { useOrderStore } from "~/state/orderStore";
-import { Box, Check, House, MapPin, ShoppingBag, Truck, X, type LucideProps } from "lucide-react";
+import { Box, Check, House, MapPin, ShoppingBag, Truck, Wallet, X, type LucideProps } from "lucide-react";
 import { OrderStatusStep } from "../commons/OrderStatusStep";
 import type { ForwardRefExoticComponent, RefAttributes } from "react";
 import { Button } from "../commons/Button";
@@ -149,6 +149,32 @@ export const OrderDetails = () => {
         <div className="text-2xl font-bold">Items in this order</div>
         {orderDetails?.items && <ItemList items={orderDetails.items} />}
       </div>
+
+      <div className="my-5 flex gap-2">
+        <div className="border border-gray-300 rounded-xl bg-white p-5 flex-1">
+          <div className="flex gap-2 text-gray-500 text-sm mb-2"><MapPin /> Delivery Address</div>
+          <div className="w-50 font-semibold">
+            Pirya Nair
+            44 Lakebiew Road, Apt 3B
+            Hyderabad, TG 500034
+          </div>
+        </div>
+
+        <div className="border border-gray-300 rounded-xl bg-white p-5 flex-1">
+          <div className="flex gap-2 text-gray-500 text-sm mb-2"><Wallet /> Payment</div>
+          <div className="w-50 font-semibold">
+            Visa ending 4117
+            Billed Sep 8
+          </div>
+        </div>
+      </div>
+
+      <div className="flex gap-2">
+        <Button label="Return an item" className="flex-1"/>
+        <Button label="Download invoice" className="flex-1"/>
+        <Button label="Get help with this order" className="flex-1"/>
+      </div>
+
     </div>
   );
 };

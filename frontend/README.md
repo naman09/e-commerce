@@ -32,9 +32,11 @@ npm run build
 - [ x ] Product Details Page
 - [ x ] Add ~~recoil Zustand
 - [ x ] Move code from home.tsx to a HomePage component
+- [ ]  Track Order page styling
+- [ ] is w- and h- responsive ?
+- [ ] A11y - Test and find issues
 - [ ] Order History wireframe
 - [ x ] Get order details using Zustand
-- [ ]  Track Order page styling
 - [ ] Marketplace Page Fix
 - [ ] Customer support Page
 - [ ] admin portal to enter data
@@ -47,7 +49,7 @@ npm run build
 - [ ] Clicks - Brand icon click should take me to home page
 - [ ] Clicks - Marketplace icon click should take me to marketplace page
 - [ ] SEO - update meta tags
-- [ ] A11y - Test and find issues
+- [ ] Show full text on hover
  
 
 # Learning goals
