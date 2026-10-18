@@ -1,4 +1,13 @@
-const ProgressBar = ({ progress = 60, label = "", classNames = "" }) => {
+export interface ProgressBarProps {
+  progress : number;
+  label? : string;
+  classNames?: string;
+}
+
+export const ProgressBar = (props: ProgressBarProps) => {
+
+  const { label, progress, classNames } = props;
+
   return (
     <div className="flex items-center gap-x-2">
       {label}
@@ -12,5 +21,3 @@ const ProgressBar = ({ progress = 60, label = "", classNames = "" }) => {
     </div>
   );
 };
-
-export default ProgressBar;

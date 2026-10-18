@@ -3,7 +3,7 @@ export const ImageCard = () => {
     <div className="rounded-lg cursor-pointer w-150">
       <img
         src="/app/assets/images/erik-mclean-IxfhMTROke8-unsplash.jpg"
-        alt="product image"
+        alt="product"
         className=""
       />
     </div>

@@ -1,4 +1,4 @@
-import { Dot, Image } from "lucide-react";
+import { Dot } from "lucide-react";
 import { Price } from "../commons/Price";
 import type { Item } from "./OrderHistoryPage";
 
@@ -11,7 +11,9 @@ export const SingleItem = (props: SingleItemProps) => {
     return (
         <div className="flex justify-between">
             <div className="flex gap-2">
-                <img className="w-10" src={item.imageUrl} />
+
+                {/* TODO: show default image when error loading image */}
+                <img className="w-10" src={item.imageUrl} alt={`item - ${item.name}`} />
                 <div>
                     {/* TODO: Show full text on hover */}
                     <div className="w-100 truncate font-medium">{item.name}</div>

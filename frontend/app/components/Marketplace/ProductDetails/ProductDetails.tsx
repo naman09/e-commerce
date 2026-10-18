@@ -50,7 +50,7 @@ export const ProductDetails = () => {
           <ImageCard />
           <div>
             <h2 className="text-gray-500">Company name</h2>
-            <h3 className="text-2xl font-bold">Product name</h3>
+            <h3 className="text-2xl font-bold">Product name (id)</h3>
             <div className="flex gap-2">
               <Rating rating={4.2} variant={"SMALL"}/>
 

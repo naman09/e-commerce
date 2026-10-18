@@ -34,7 +34,11 @@ npm run build
 - [ x ] Move code from home.tsx to a HomePage component
 - [ ]  Track Order page styling
 - [ ] is w- and h- responsive ?
-- [ ] A11y - Test and find issues
+- [ x ] A11y testing Automated - eslint plugin
+- [ ] A11y testing Automated - Playwright + axe-core
+- [ ] A11y testing Manual - Keyboard testing (do after major changes)
+- [ ] A11y testing Manual - Screen reader testing 
+- [ ] setup eslint as git commit pre-hook
 - [ ] Order History wireframe
 - [ x ] Get order details using Zustand
 - [ ] Marketplace Page Fix

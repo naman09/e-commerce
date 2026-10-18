@@ -1,4 +1,3 @@
-import { Rating } from "./Rating";
 import { ReviewCard } from "./ReviewCard";
 
 export interface Review {
