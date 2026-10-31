@@ -32,7 +32,7 @@ npm run build
 - [ x ] Product Details Page
 - [ x ] Add ~~recoil Zustand
 - [ x ] Move code from home.tsx to a HomePage component
-- [ ]  Track Order page styling
+- [ x ] Track Order page styling
 - [ ] is w- and h- responsive ?
 - [ x ] A11y testing Automated - eslint plugin
 - [ ] A11y testing Automated - Playwright + axe-core

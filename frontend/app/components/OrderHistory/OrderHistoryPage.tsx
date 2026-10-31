@@ -1,8 +1,9 @@
 import Order from "~/routes/order";
 import type { Pricing } from "../Marketplace/ProductDetails/ProductDetails";
-import { OrderListCard } from "./OrderListCard";
+import { SingleOrderLine } from "./SingleOrderLine";
 import { useEffect } from "react";
 import { useOrderStore } from "~/state/orderStore";
+import { Button } from "../commons/Button";
 
 // We also have intreface - Product. We may use common interface. 
 // But this gives more flexibilty
@@ -65,7 +66,30 @@ export const OrderHistoryPage = () => {
     setOrders(mockOrders);
   }, [])
 
-  return <div className="mx-10 my-5">
-    {orders.map(order => <OrderListCard key={order.id} orderId={order.id} />)}
-  </div>
+
+  const handleDeliveryFilterClick = () => {
+    console.log("All clicked");
+  }
+
+  return (
+    <div className="p-10 bg-gray-50">
+      <div className="text-xl">Your Orders</div>
+      <div className="text-sm text-gray-600">6 orders in the last 12 months</div>
+      <div>
+        <div>
+          <Button className="" label="All" onClick = {handleDeliveryFilterClick}/>
+          <Button className="" label="On the way" />
+          <Button className="" label="Delivered" />
+          <Button className="" label="Returned" />
+        </div>
+        <div>
+          Search Bar
+        </div>
+      </div>
+
+      <div>
+        {orders.map(order => <SingleOrderLine key={order.id} orderId={order.id} />)}
+      </div>
+    </div>
+  );
 };

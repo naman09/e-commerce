@@ -6,6 +6,7 @@ import { OrderStatusStep } from "../commons/OrderStatusStep";
 import type { ForwardRefExoticComponent, RefAttributes } from "react";
 import { Button } from "../commons/Button";
 import { ItemList } from "./ItemList";
+import { Badge } from "../commons/Badge";
 
 
 export interface OrderStatusStepDetails {
@@ -80,7 +81,7 @@ export const OrderDetails = () => {
 
       <div className="flex justify-between">
         <div className="text-gray-600">Order {id}</div>
-        <div className="bg-green-200 text-green-800 rounded-md font-semibold px-2 py-1">on the way</div>
+        <Badge text="on the way"/>
       </div>
       
       <div className="text-4xl font-bold">Arriving Thursday</div>
