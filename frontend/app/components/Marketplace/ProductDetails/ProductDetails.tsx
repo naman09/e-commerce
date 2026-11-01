@@ -8,7 +8,7 @@ import { QuantitySelector } from "./QuantitySelector";
 import { FileText, LayoutList, Star } from "lucide-react";
 import { ReviewList } from "./CustomerReviews/ReviewList";
 import { Button } from "../../commons/Button"
-import ProgressBar from "../../commons/ProgressBar"
+import { ProgressBar } from "../../commons/ProgressBar"
 
 export interface Product {
   id: string;

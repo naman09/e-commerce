@@ -52,7 +52,7 @@ npm run build
 - [ ] Refactor - Combine search nav bar and top nav bar 
 - [ ] Clicks - Brand icon click should take me to home page
 - [ ] Clicks - Marketplace icon click should take me to marketplace page
-- [ ] SEO - update meta tags
+- [ ] SEO - update meta tags (SEO has 2 parts - one is checking that meta/title tags is filled is just one part. Whether is keywork is valuable or not is different other part. DataForSEO and OpenSEO helps in that)
 - [ ] Show full text on hover
  
 
