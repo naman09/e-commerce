@@ -54,6 +54,9 @@ npm run build
 - [ ] Clicks - Marketplace icon click should take me to marketplace page
 - [ ] SEO - update meta tags (SEO has 2 parts - one is checking that meta/title tags is filled is just one part. Whether is keywork is valuable or not is different other part. DataForSEO and OpenSEO helps in that)
 - [ ] Show full text on hover
+- [ ] Setup CI using github actions
+- [ ] setup unit tests for error handling scenarios (post adding states. States will probably added post basic backend)
+- [ ] UI security testing
  
 
 # Learning goals

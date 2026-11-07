@@ -6,6 +6,8 @@ export interface PriceProps {
 const language: string = "en-IN"; // TODO: get at runtime based on user locale
 
 export const Price = (props: PriceProps) => {
+
+  // TODO: handle invalid currency code
   const getFormattedAmount = (currencyCode: string, amount: number) => {
     return new Intl.NumberFormat(language, {
       style: "currency",

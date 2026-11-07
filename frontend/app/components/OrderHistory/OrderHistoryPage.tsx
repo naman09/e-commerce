@@ -1,7 +1,7 @@
 import Order from "~/routes/order";
 import type { Pricing } from "../Marketplace/ProductDetails/ProductDetails";
 import { SingleOrderLine } from "./SingleOrderLine";
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import { useOrderStore } from "~/state/orderStore";
 import { Button } from "../commons/Button";
 
@@ -77,7 +77,7 @@ export const OrderHistoryPage = () => {
       <div className="text-sm text-gray-600">6 orders in the last 12 months</div>
       <div>
         <div>
-          <Button className="" label="All" onClick = {handleDeliveryFilterClick}/>
+          <Button className="bg-sky-600" label="All" onClick = {handleDeliveryFilterClick}/>
           <Button className="" label="On the way" />
           <Button className="" label="Delivered" />
           <Button className="" label="Returned" />
@@ -87,8 +87,15 @@ export const OrderHistoryPage = () => {
         </div>
       </div>
 
+      <hr className="border-gray-300 my-3"/>
+
       <div>
-        {orders.map(order => <SingleOrderLine key={order.id} orderId={order.id} />)}
+        {orders.map((order) => (
+          <Fragment key={order.id}>
+            <SingleOrderLine orderId={order.id} />
+            <hr className="border-gray-300 my-3"/>
+          </Fragment>
+        ))}
       </div>
     </div>
   );
