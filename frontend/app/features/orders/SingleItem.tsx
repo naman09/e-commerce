@@ -1,5 +1,5 @@
 import { Dot } from "lucide-react";
-import { Price } from "../commons/Price";
+import { Price } from "../../components/commons/Price";
 import type { Item } from "./OrderHistoryPage";
 
 export interface SingleItemProps {

@@ -37,8 +37,7 @@ npm run build
 - [ x ] A11y testing Automated - eslint plugin
 - [ ] A11y testing Automated - Playwright + axe-core
 - [ ] A11y testing Manual - Keyboard testing (do after major changes)
-- [ ] A11y testing Manual - Screen reader testing 
-- [ ] setup eslint as git commit pre-hook
+- [ ] A11y testing Manual - Screen reader testing
 - [ ] Order History wireframe
 - [ x ] Get order details using Zustand
 - [ ] Marketplace Page Fix
@@ -57,6 +56,7 @@ npm run build
 - [ ] Setup CI using github actions
 - [ ] setup unit tests for error handling scenarios (post adding states. States will probably added post basic backend)
 - [ ] UI security testing
+- [ ] Add telemetry
  
 
 # Learning goals

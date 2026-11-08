@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import type { Pricing } from "~/components/Marketplace/ProductDetails/ProductDetails";
-import type { Order } from "~/components/OrderHistory/OrderHistoryPage";
+import type { Order } from "~/features/orders/OrderHistoryPage";
 
 const pricing1: Pricing = {
   amount: 21,

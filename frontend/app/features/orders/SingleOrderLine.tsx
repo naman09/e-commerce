@@ -1,7 +1,7 @@
 import { ChevronRight, Dot } from "lucide-react";
 import { useNavigate } from "react-router";
-import { Badge } from "../commons/Badge";
-import { Price } from "../commons/Price";
+import { Badge } from "../../components/commons/Badge";
+import { Price } from "../../components/commons/Price";
 
 export interface SingleOrderLineProps {
     orderId: string;

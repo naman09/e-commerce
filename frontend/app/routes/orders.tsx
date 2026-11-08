@@ -1,4 +1,4 @@
-import { OrderHistoryPage } from "~/components/OrderHistory/OrderHistoryPage";
+import { OrderHistoryPage } from "~/features/orders/OrderHistoryPage";
 
 export async function loader() {
   // you can fetch data here later

@@ -2,17 +2,18 @@ import { useParams } from "react-router";
 import type { Order } from "./OrderHistoryPage";
 import { useOrderStore } from "~/state/orderStore";
 import { Box, Check, House, MapPin, ShoppingBag, Truck, Wallet, X, type LucideProps } from "lucide-react";
-import { OrderStatusStep } from "../commons/OrderStatusStep";
+import { OrderStatusStep } from "../../components/commons/OrderStatusStep";
 import type { ForwardRefExoticComponent, RefAttributes } from "react";
-import { Button } from "../commons/Button";
+import { Button } from "../../components/commons/Button";
 import { ItemList } from "./ItemList";
-import { Badge } from "../commons/Badge";
+import { Badge } from "../../components/commons/Badge";
+import type { OrderProcessStatus, OrderStatus } from "./orders.types";
 
 
 export interface OrderStatusStepDetails {
   // TODO: make stepLabel as enum. It is used in multiple places. Enum will make sure name changes are easy
-  stepLabel: "Placed" | "Packed" | "Shipped" | "Out for delivery" | "Delivered" ;
-  status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' | 'CANCELLED' ;
+  stepLabel: OrderStatus ;
+  status: OrderProcessStatus;
   expectedCompletionDate: Date;
   actualCompletionDate: Date;
 }

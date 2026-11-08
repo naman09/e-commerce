@@ -1,4 +1,4 @@
-import { Price } from "../commons/Price";
+import { Price } from "../../components/commons/Price";
 import type { Item } from "./OrderHistoryPage"
 import { SingleItem } from "./SingleItem";
 

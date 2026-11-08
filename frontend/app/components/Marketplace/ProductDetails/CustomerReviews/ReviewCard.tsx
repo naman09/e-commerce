@@ -1,4 +1,4 @@
-import { getDisplayDate } from "~/utils/dateUtils";
+import { getDisplayDate } from "~/commons/utils/dateUtils";
 import { Rating } from "./Rating";
 
 export interface ReviewCardProps {

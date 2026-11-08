@@ -1,9 +1,10 @@
 import Order from "~/routes/order";
-import type { Pricing } from "../Marketplace/ProductDetails/ProductDetails";
+import type { Pricing } from "../../components/Marketplace/ProductDetails/ProductDetails";
 import { SingleOrderLine } from "./SingleOrderLine";
 import { Fragment, useEffect } from "react";
 import { useOrderStore } from "~/state/orderStore";
-import { Button } from "../commons/Button";
+import { Button } from "../../components/commons/Button";
+import { ORDER_STATUSES } from "./orders.types";
 
 // We also have intreface - Product. We may use common interface. 
 // But this gives more flexibilty
@@ -71,16 +72,17 @@ export const OrderHistoryPage = () => {
     console.log("All clicked");
   }
 
+
+
   return (
     <div className="p-10 bg-gray-50">
       <div className="text-xl">Your Orders</div>
       <div className="text-sm text-gray-600">6 orders in the last 12 months</div>
-      <div>
-        <div>
-          <Button className="bg-sky-600" label="All" onClick = {handleDeliveryFilterClick}/>
-          <Button className="" label="On the way" />
-          <Button className="" label="Delivered" />
-          <Button className="" label="Returned" />
+      <div className="flex justify-between">
+        <div className="flex gap-2">
+          {["All",...ORDER_STATUSES].map(orderStatus => 
+            <Button key={orderStatus} className="bg-sky-600" label={orderStatus} onClick = {handleDeliveryFilterClick}/>
+          )}
         </div>
         <div>
           Search Bar
