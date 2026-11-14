@@ -5,11 +5,11 @@ export interface ButtonProps {
   className?: string;
   onClick?: EventHandler<any>;
 }
-
+// text-white hover:bg-gray-700
 export const Button = (props: ButtonProps) => {
   return (
       <button
-        className={`bg-gray-900 text-white rounded-lg hover:bg-gray-700 cursor-pointer transition px-4 py-2 ${props.className}`}
+        className={`bg-gray-900  rounded-lg  cursor-pointer transition px-4 py-2 ${props.className}`}
         onClick={props.onClick}
       >
         {props.label}

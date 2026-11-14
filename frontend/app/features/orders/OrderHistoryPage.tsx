@@ -1,7 +1,7 @@
 import Order from "~/routes/order";
 import type { Pricing } from "../../components/Marketplace/ProductDetails/ProductDetails";
 import { SingleOrderLine } from "./SingleOrderLine";
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useOrderStore } from "~/state/orderStore";
 import { Button } from "../../components/commons/Button";
 import { ORDER_STATUSES } from "./orders.types";
@@ -63,16 +63,21 @@ export const OrderHistoryPage = () => {
   const orders = useOrderStore((state) => state.orders);
   const setOrders = useOrderStore((state) => state.setOrders);
 
+  const [selectedFilters, setSelectedFilters] = useState<string[]>([ORDER_STATUSES[0]]);
+
   useEffect(() => {
     setOrders(mockOrders);
   }, [])
 
-
-  const handleDeliveryFilterClick = () => {
-    console.log("All clicked");
+  const handleDeliveryFilterClick = (btnClicked: string) => {
+    return () => {
+      if (selectedFilters.includes(btnClicked)) {
+        setSelectedFilters(selectedFilters.filter(filter => filter !== btnClicked));
+      } else {
+        setSelectedFilters([...selectedFilters, btnClicked]);
+      } 
+    }
   }
-
-
 
   return (
     <div className="p-10 bg-gray-50">
@@ -81,7 +86,12 @@ export const OrderHistoryPage = () => {
       <div className="flex justify-between">
         <div className="flex gap-2">
           {["All",...ORDER_STATUSES].map(orderStatus => 
-            <Button key={orderStatus} className="bg-sky-600" label={orderStatus} onClick = {handleDeliveryFilterClick}/>
+            <Button 
+              key={orderStatus} 
+              className={selectedFilters.includes(orderStatus) ? "bg-sky-600 hover:bg-sky-600 text-white" : "bg-white border border-gray-200 hover:border-sky-600"} 
+              label={orderStatus} 
+              onClick = {handleDeliveryFilterClick(orderStatus)}
+            />
           )}
         </div>
         <div>

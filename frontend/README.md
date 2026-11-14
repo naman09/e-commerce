@@ -33,12 +33,14 @@ npm run build
 - [ x ] Add ~~recoil Zustand
 - [ x ] Move code from home.tsx to a HomePage component
 - [ x ] Track Order page styling
+- [ ] order history page styling
+- [ ] Refactor to new directory structure
 - [ ] is w- and h- responsive ?
 - [ x ] A11y testing Automated - eslint plugin
 - [ ] A11y testing Automated - Playwright + axe-core
 - [ ] A11y testing Manual - Keyboard testing (do after major changes)
 - [ ] A11y testing Manual - Screen reader testing
-- [ ] Order History wireframe
+- [ x ] Order History wireframe
 - [ x ] Get order details using Zustand
 - [ ] Marketplace Page Fix
 - [ ] Customer support Page
