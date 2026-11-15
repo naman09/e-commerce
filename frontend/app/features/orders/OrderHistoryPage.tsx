@@ -5,6 +5,7 @@ import { Fragment, useEffect, useState } from "react";
 import { useOrderStore } from "~/state/orderStore";
 import { Button } from "../../components/commons/Button";
 import { ORDER_STATUSES } from "./orders.types";
+import { SearchBarWithoutDropDown } from "../search-bar/SearchBarWithoutDropDown";
 
 // We also have intreface - Product. We may use common interface. 
 // But this gives more flexibilty
@@ -95,7 +96,7 @@ export const OrderHistoryPage = () => {
           )}
         </div>
         <div>
-          Search Bar
+          <SearchBarWithoutDropDown />
         </div>
       </div>
 
