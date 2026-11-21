@@ -1,8 +1,9 @@
 import { type RouteConfig, index, route } from "@react-router/dev/routes";
+import { MARKETPLACE_ROUTE } from "./commons/constants/app.constants";
 
 export default [
   index("routes/home.tsx"),
-  route("market", "routes/marketplace.tsx"),
+  route(MARKETPLACE_ROUTE, "routes/marketplace.tsx"),
   route("product/:id", "routes/product.tsx"),
   route("cart", "routes/cart.tsx"),
   route("profile", "routes/profile.tsx"),

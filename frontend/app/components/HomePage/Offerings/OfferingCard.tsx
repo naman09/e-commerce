@@ -1,13 +1,23 @@
+import { useNavigate } from "react-router";
+
 export interface OfferingCardProps {
   imageUrl: string;
   imageAlt: string;
   title: string;
   description: string;
+  navigateToPageOnClick?: string;
 }
 
 export const OfferingCard = (props: OfferingCardProps) => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    props.navigateToPageOnClick && navigate(props.navigateToPageOnClick);
+  };
+
   return (
-    <div className="w-100 group cursor-pointer">
+    <div className="w-100 group cursor-pointer" onClick={handleClick}>
       <img
         src={props.imageUrl}
         alt={props.imageAlt}

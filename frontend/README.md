@@ -26,6 +26,55 @@ npm run build
 "https://picsum.photos/800/400?2",
 "https://picsum.photos/800/400?3",
 
+
+## Directory structure
+
+src/
+├── app/
+│   ├── routes/
+│   ├── providers/
+│   └── store/
+│
+├── features/
+│   ├── auth/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── types/
+│   │   │   ├── auth.types.ts
+│   │   │   └── auth.enums.ts
+│   │   └── index.ts
+│   │
+│   ├── products/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── types/
+│   │   │   ├── product.types.ts
+│   │   │   └── product.enums.ts
+│   │   └── index.ts
+│   │
+│   └── orders/
+│       ├── components/
+│       ├── hooks/
+│       ├── services/
+│       └── types/
+│
+├── commons/
+│   ├── components/
+│   ├── hooks/
+│   ├── utils/
+│   ├── constants/
+│   └── types/
+│       ├── api.types.ts
+│       ├── common.types.ts
+│       └── pagination.types.ts
+│
+├── services/
+│   └── api/
+│
+└── assets/
+
 ## Next steps
 
 - [ x ] All pages wireframe - product details, user details, checkout cart, order history, order details, payment success/failure
@@ -33,27 +82,31 @@ npm run build
 - [ x ] Add ~~recoil Zustand
 - [ x ] Move code from home.tsx to a HomePage component
 - [ x ] Track Order page styling
-- [ ] order history page styling
-- [ ] Refactor to new directory structure
+- [ ] Style: Marketplace page
+- [ ] Test: Responsive web design
+- [ ] Bug: Order history: selecting a filter button shifts the buttons a little to left.
+- [ ] Refactor: in orders/ singleItem and single order line is confusing
+- [ x ] order history page styling
+- [ ] Refactor: to new directory structure
 - [ ] is w- and h- responsive ?
 - [ x ] A11y testing Automated - eslint plugin
-- [ ] A11y testing Automated - Playwright + axe-core
-- [ ] A11y testing Manual - Keyboard testing (do after major changes)
-- [ ] A11y testing Manual - Screen reader testing
+- [ ] Test:A11y testing Automated - Playwright + axe-core
+- [ ] Test: A11y testing Manual - Keyboard testing (do after major changes)
+- [ ] Test: A11y testing Manual - Screen reader testing
 - [ x ] Order History wireframe
 - [ x ] Get order details using Zustand
-- [ ] Marketplace Page Fix
-- [ ] Customer support Page
-- [ ] admin portal to enter data
+- [ ] Bug: Marketplace Page Fix (what is the bug)
+- [ ] Feat: Footer
+- [ ] Feat: Customer support Page
+- [ ] Feat: admin portal to enter data
 - [ x ] run lint, prettier check on my code
 - [ x ] Search nav bar - fix it at top like current navbar
 - [ x ] Search nav bar - return results from picklist
-- [ ] Footer
-- [ ] Search nav bar - remember user history in browser
-- [ ] Refactor - Combine search nav bar and top nav bar 
-- [ ] Clicks - Brand icon click should take me to home page
-- [ ] Clicks - Marketplace icon click should take me to marketplace page
-- [ ] SEO - update meta tags (SEO has 2 parts - one is checking that meta/title tags is filled is just one part. Whether is keywork is valuable or not is different other part. DataForSEO and OpenSEO helps in that)
+- [ ] Feat: Search nav bar - remember user history in browser
+- [ ] Refactor: Combine search nav bar and top nav bar 
+- [ ] Brand icon click should take me to home page
+- [ ] Marketplace icon click should take me to marketplace page
+- [ ] Test: SEO - update meta tags (SEO has 2 parts - one is checking that meta/title tags is filled is just one part. Whether is keywork is valuable or not is different other part. DataForSEO and OpenSEO helps in that)
 - [ ] Show full text on hover
 - [ ] Setup CI using github actions
 - [ ] setup unit tests for error handling scenarios (post adding states. States will probably added post basic backend)

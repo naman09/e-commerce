@@ -1,3 +1,4 @@
+import { MARKETPLACE_ROUTE } from "~/commons/constants/app.constants";
 import { OfferingCard } from "./OfferingCard";
 
 const offeringMetadata = [
@@ -9,6 +10,7 @@ const offeringMetadata = [
       imageUrl: "app/assets/images/he-shiyuan-8sXS9dtSHy8-unsplash.jpg",
       imageAlt: "marketplace image",
     },
+    navigateToPageOnClick: MARKETPLACE_ROUTE
   },
   {
     title: "Services",
@@ -41,6 +43,7 @@ export const Offerings = () => {
             imageAlt={offering.image.imageAlt}
             title={offering.title}
             description={offering.description}
+            navigateToPageOnClick={offering.navigateToPageOnClick} 
           />
         ))}
       </div>
