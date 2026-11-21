@@ -77,7 +77,7 @@ src/
 
 ## Next steps
 
-- [ x ] All pages wireframe - product details, user details, checkout cart, order history, order details, payment success/failure
+- [x] All pages wireframe - product details, user details, checkout cart, order history, order details, payment success/failure
 - [ x ] Product Details Page
 - [ x ] Add ~~recoil Zustand
 - [ x ] Move code from home.tsx to a HomePage component
