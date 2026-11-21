@@ -78,18 +78,18 @@ src/
 ## Next steps
 
 - [x] All pages wireframe - product details, user details, checkout cart, order history, order details, payment success/failure
-- [ x ] Product Details Page
-- [ x ] Add ~~recoil Zustand
-- [ x ] Move code from home.tsx to a HomePage component
-- [ x ] Track Order page styling
+- [x] Product Details Page
+- [x] Add ~~recoil Zustand
+- [x] Move code from home.tsx to a HomePage component
+- [x] Track Order page styling
 - [ ] Style: Marketplace page
 - [ ] Test: Responsive web design
 - [ ] Bug: Order history: selecting a filter button shifts the buttons a little to left.
 - [ ] Refactor: in orders/ singleItem and single order line is confusing
-- [ x ] order history page styling
+- [x] order history page styling
 - [ ] Refactor: to new directory structure
 - [ ] is w- and h- responsive ?
-- [ x ] A11y testing Automated - eslint plugin
+- [x] A11y testing Automated - eslint plugin
 - [ ] Test:A11y testing Automated - Playwright + axe-core
 - [ ] Test: A11y testing Manual - Keyboard testing (do after major changes)
 - [ ] Test: A11y testing Manual - Screen reader testing
@@ -99,9 +99,9 @@ src/
 - [ ] Feat: Footer
 - [ ] Feat: Customer support Page
 - [ ] Feat: admin portal to enter data
-- [ x ] run lint, prettier check on my code
-- [ x ] Search nav bar - fix it at top like current navbar
-- [ x ] Search nav bar - return results from picklist
+- [x] run lint, prettier check on my code
+- [x] Search nav bar - fix it at top like current navbar
+- [x] Search nav bar - return results from picklist
 - [ ] Feat: Search nav bar - remember user history in browser
 - [ ] Refactor: Combine search nav bar and top nav bar 
 - [ ] Brand icon click should take me to home page
