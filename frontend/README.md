@@ -93,8 +93,8 @@ src/
 - [ ] Test:A11y testing Automated - Playwright + axe-core
 - [ ] Test: A11y testing Manual - Keyboard testing (do after major changes)
 - [ ] Test: A11y testing Manual - Screen reader testing
-- [ x ] Order History wireframe
-- [ x ] Get order details using Zustand
+- [x] Order History wireframe
+- [x] Get order details using Zustand
 - [ ] Bug: Marketplace Page Fix (what is the bug)
 - [ ] Feat: Footer
 - [ ] Feat: Customer support Page
