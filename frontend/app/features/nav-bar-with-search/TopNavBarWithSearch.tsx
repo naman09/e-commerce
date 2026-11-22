@@ -1,6 +1,7 @@
 import { useUserStore } from "~/state/userStore";
-import { TopNavBarItem } from "./TopNavBarItem";
 import { useState } from "react";
+import { TopNavBarItem } from "./TopNavBarItem";
+import { Cart } from "../cart/cart";
 
 export interface SearchResult {
   title: string;
@@ -18,8 +19,8 @@ const searchResultsDummyData: SearchResult[] = [
   }
 ];
 
-export const TopNavBar = () => {
-  const navBarItems = ["Cart", "User"];
+export const TopNavBarWithSearch = () => {
+  const navBarItems = ["User", "Orders & Returns"];
 
   const userId = useUserStore((state) => state.userId); 
 
@@ -41,7 +42,8 @@ export const TopNavBar = () => {
           alt="blue whale corp navbar logo"
           className="h-15"
         />
-        <h1 className="text-3xl">&nbsp;BWC Marketplace</h1>
+        <h1 className="text-3xl">&nbsp;BWC</h1>
+        <h2 className="text-lg">&nbsp;Marketplace</h2>
       </div>
       <div className="flex relative grow rounded-t-3xl has-focus:bg-white text-black">
         <input
@@ -72,8 +74,7 @@ export const TopNavBar = () => {
         {navBarItems.map((navBarItem) => (
           <TopNavBarItem key={navBarItem} label={navBarItem} />
         ))}
-
-        {userId}
+        <Cart />
       </div>
     </div>
   );

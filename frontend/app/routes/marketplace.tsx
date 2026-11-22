@@ -1,4 +1,4 @@
-import MarketplacePage from "~/components/Marketplace/MarketplacePage";
+import MarketplacePage from "~/features/marketplace/MarketplacePage";
 
 export async function loader() {
   // you can fetch data here later

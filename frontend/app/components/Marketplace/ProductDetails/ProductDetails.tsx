@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { TopNavBar } from "../SearchBar/TopNavBar";
+import { TopNavBarWithSearch } from "../../../features/nav-bar-with-search/TopNavBarWithSearch";
 import { ImageCard } from "./ImageCard";
 import { Rating } from "./CustomerReviews/Rating";
 import { Price } from "../../commons/Price";
@@ -44,7 +44,7 @@ export const ProductDetails = () => {
 
   return (
     <div className="bg-gray-50">
-      <TopNavBar />
+      <TopNavBarWithSearch />
       <div className="mx-10">
         <div className="flex flex-wrap gap-5">
           <ImageCard />

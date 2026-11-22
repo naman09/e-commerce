@@ -96,6 +96,8 @@ src/
 - [x] Order History wireframe
 - [x] Get order details using Zustand
 - [ ] Bug: Marketplace Page Fix (what is the bug)
+- [ ] Bug: Order details page: buttons text color
+- [ ] Bug: Order details page: image
 - [ ] Feat: Footer
 - [ ] Feat: Customer support Page
 - [ ] Feat: admin portal to enter data
